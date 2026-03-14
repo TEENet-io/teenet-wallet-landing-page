@@ -20,101 +20,63 @@ export const en: ContentData = {
     ctaSecondary: 'Watch Demo',
   },
   hero: {
-    headline: 'A Trusted Wallet for OpenClaw',
-    subheadline: 'Create and use on-chain wallets through chat. Set rules for transfers and contract interactions, and approve sensitive actions with Passkey.',
+    headline: 'OpenClaw Trusted Wallet',
+    subheadline: 'Manage on-chain wallets through chat. Set execution rules. Approve sensitive actions with Passkey.',
     supporting: "A wallet application running on TEENet's trusted runtime.",
     tags: ['Chat-native wallet', 'Rule-based execution', 'Passkey approvals', 'Built on TEENet'],
     ctaPrimary: 'Join Beta',
     ctaSecondary: 'Watch Demo',
   },
   whyThisMatters: {
-    title: 'An agent being able to use a wallet does not mean it should have unlimited authority.',
-    intro: 'Once OpenClaw interacts with on-chain assets, the key question is not capability — it is control. Which actions run automatically? Which require approval? Which contracts are allowed?',
+    title: 'Wallet Access ≠ Unlimited Authority',
+    intro: 'The question isn\'t whether your agent can transact — it\'s who controls what it can do.',
     items: [
-      { title: 'Execution boundaries matter', description: 'Not every action should execute freely. Users need clear control over what the agent can do with their assets.' },
-      { title: 'Some actions need approval', description: 'Transfers above a threshold, interactions with unfamiliar contracts — these should require explicit user confirmation.' },
-      { title: 'Contracts should be restricted', description: 'Not all contract addresses should be accessible. Allowlists define what the agent can interact with.' },
-      { title: 'Rule changes need oversight', description: 'Modifying execution rules is itself a sensitive action. Changes to thresholds or allowlists may require their own approval.' },
+      { title: 'Execution Boundaries Matter', description: 'Not every action should execute freely. Users need clear control over what the agent can do with their assets.' },
+      { title: 'Some Actions Need Approval', description: 'Transfers above a threshold, interactions with unfamiliar contracts — these should require explicit user confirmation.' },
+      { title: 'Contracts Should Be Restricted', description: 'Not all contract addresses should be accessible. Allowlists define what the agent can interact with.' },
+      { title: 'Rule Changes Need Oversight', description: 'Modifying execution rules is itself a sensitive action. Changes to thresholds or allowlists may require their own approval.' },
     ],
   },
   howItWorks: {
-    title: 'Use Wallets with OpenClaw in Three Steps',
+    title: 'How It Works',
     steps: [
       {
-        title: 'Create or use wallets through chat',
+        title: 'Chat to Transact',
         description: 'Create wallets on supported chains like Ethereum or Solana. Check balances, review transaction history, initiate transfers and contract calls — all through conversation.',
       },
       {
-        title: 'Set rules before the agent takes action',
+        title: 'Set the Rules',
         description: 'Define transfer thresholds that require approval, specify allowed contract addresses, flag sensitive actions for confirmation, and optionally require authorization for rule changes themselves.',
       },
       {
-        title: 'Approve sensitive actions with Passkey before execution',
+        title: 'Approve with Passkey',
         description: 'When an action triggers a rule, you receive an approval link in chat. Open the approval page, verify with Passkey or biometrics, and the action proceeds only after successful approval.',
       },
     ],
   },
   coreFeatures: {
-    title: 'Not just another wallet UI, but a control model designed for the agent era',
+    title: 'Built for Agent-Driven Transactions',
     features: [
       {
-        title: 'Chat-native wallet experience',
+        title: 'Chat-Native',
         description: 'Create wallets, check balances and history, initiate transfers and contract calls — all through natural conversation with OpenClaw.',
       },
       {
-        title: 'Rules apply before execution',
+        title: 'Policy-Enforced',
         description: 'Transfer thresholds, contract allowlists, and high-risk action restrictions form the default execution boundary. Policy is enforced, not suggested.',
       },
       {
-        title: 'Real authorization, not a casual chat confirmation',
+        title: 'Independent Approval',
         description: 'Sensitive actions generate an approval link leading to a dedicated approval page. Verification uses Passkey — execution proceeds only after approval.',
       },
       {
-        title: 'Trusted execution, not just a front-end prompt',
+        title: 'Trusted Runtime',
         description: "Sensitive wallet logic runs on TEENet's trusted runtime. Authorization and execution are tied together at the infrastructure level, not layered on as a UI flow.",
       },
     ],
   },
-  rulesAndApprovals: {
-    title: 'Automate the routine. Approve the risky.',
-    scenarios: [
-      {
-        title: 'Routine, low-risk actions',
-        description: 'Actions within predefined rules execute normally. No interruption, no delay.',
-        level: 'low',
-      },
-      {
-        title: 'Transfers above a threshold',
-        description: 'Triggers an approval link. The action waits for Passkey confirmation before proceeding.',
-        level: 'medium',
-      },
-      {
-        title: 'Contract calls outside the allowlist',
-        description: 'Blocked directly or escalated for stronger approval. Unapproved contracts cannot execute.',
-        level: 'high',
-      },
-    ],
-  },
-  trustSection: {
-    title: 'Why is this approval flow trustworthy?',
-    cards: [
-      {
-        title: 'Approval is independent, not just a chat reply',
-        description: 'Sensitive actions do not continue because of a casual chat reply. Users must complete a separate approval flow using Passkey or biometrics.',
-      },
-      {
-        title: 'Rules are not UI hints — they define execution boundaries',
-        description: 'Thresholds and allowlists are not cosmetic. They determine whether execution can proceed. Requests can be blocked or escalated based on policy.',
-      },
-      {
-        title: 'Execution relies on a trusted runtime, not just a regular backend',
-        description: 'TEENet uses hardware-protected isolated execution for sensitive wallet logic. Runtime trust is verifiable, not merely claimed.',
-      },
-    ],
-    closingLine: 'This means your agent can use the wallet, but it cannot bypass your approval boundary.',
-  },
   builtOnTEENet: {
-    title: 'Built not only for convenience, but for trusted execution boundaries',
+    title: 'Powered by TEENet',
     points: [
       'This is a wallet application built on TEENet — not a fully open-source wallet stack.',
       'It provides wallet capabilities to OpenClaw at the application layer.',
@@ -125,7 +87,7 @@ export const en: ContentData = {
     learnMoreText: 'Learn more about TEENet trust and security',
   },
   developerSection: {
-    title: 'Open integration surfaces for OpenClaw developers',
+    title: 'Developer Integration',
     description: 'Skills and integration surfaces are available for developers to integrate wallet interactions, rule controls, and approval flows. TEENet runtime itself is not open source, but application-facing integration is open and straightforward.',
     ctaPrimary: 'Developer Preview',
     ctaSecondary: 'Request Access',
@@ -160,7 +122,7 @@ export const en: ContentData = {
     ],
   },
   finalCTA: {
-    headline: 'Give OpenClaw more execution power — without giving up control.',
+    headline: 'More Power. Same Control.',
     body: [
       'Use chat to manage wallets.',
       'Use rules to control risk.',

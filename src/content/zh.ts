@@ -20,16 +20,16 @@ export const zh: ContentData = {
     ctaSecondary: '查看 Demo',
   },
   hero: {
-    headline: '给 OpenClaw 的可信安全钱包',
-    subheadline: '通过对话创建和使用链上钱包。为转账与合约调用设置规则，并在关键操作时通过 Passkey 完成授权。',
+    headline: 'OpenClaw 可信钱包',
+    subheadline: '对话管理链上钱包。设定执行规则。Passkey 授权敏感操作。',
     supporting: '运行在 TEENet 可信执行底座上的钱包应用',
     tags: ['对话创建钱包', '规则化执行', 'Passkey 授权', 'Built on TEENet'],
     ctaPrimary: '申请试用',
     ctaSecondary: '查看 Demo',
   },
   whyThisMatters: {
-    title: 'Agent 能操作钱包，不代表它应该默认拥有全部权限。',
-    intro: '当 OpenClaw 开始操作链上资产，核心问题不是能力——而是控制。哪些操作可以自动执行？哪些需要审批？哪些合约被允许调用？',
+    title: '能用钱包 ≠ 无限权限',
+    intro: '问题不是 Agent 能不能交易，而是谁来控制它能做什么。',
     items: [
       { title: '执行边界至关重要', description: '并非每个操作都应该自由执行。用户需要清晰地控制 Agent 对资产的操作权限。' },
       { title: '部分操作需要审批', description: '超过阈值的转账、与陌生合约的交互——这些应当需要用户明确确认。' },
@@ -38,83 +38,45 @@ export const zh: ContentData = {
     ],
   },
   howItWorks: {
-    title: '三步，让 OpenClaw 更安全地使用钱包',
+    title: '如何使用',
     steps: [
       {
-        title: '通过对话创建或使用钱包',
+        title: '对话即交易',
         description: '在 Ethereum、Solana 等支持的链上创建钱包。查看余额、浏览交易历史、发起转账和合约调用——全部通过对话完成。',
       },
       {
-        title: '先设置规则，再让 Agent 动手',
+        title: '设定规则',
         description: '定义需要审批的转账阈值、指定允许的合约地址、标记需要确认的敏感操作，规则变更本身也可以要求授权。',
       },
       {
-        title: '关键操作发生前，用 Passkey 完成授权',
+        title: 'Passkey 授权',
         description: '当操作触发规则时，你会在聊天中收到授权链接。打开授权页面，通过 Passkey 或生物识别验证，操作才会继续执行。',
       },
     ],
   },
   coreFeatures: {
-    title: '不是另一个钱包界面，而是一种为 Agent 时代设计的钱包控制方式',
+    title: '为 Agent 驱动的交易而生',
     features: [
       {
-        title: 'Chat-native 钱包体验',
+        title: '对话原生',
         description: '通过与 OpenClaw 的自然对话创建钱包、查看余额和历史、发起转账和合约调用。',
       },
       {
-        title: '规则先于执行生效',
+        title: '策略强制',
         description: '转账阈值、合约白名单、高风险操作限制构成默认执行边界。策略是强制执行的，不只是建议。',
       },
       {
-        title: '真正的授权，不是聊天里的"确认一下"',
+        title: '独立授权',
         description: '敏感操作会生成授权链接，引导到独立的授权页面。验证使用 Passkey——只有完成授权后操作才会执行。',
       },
       {
-        title: '可信执行，而不只是前端提醒',
+        title: '可信硬件',
         description: '敏感钱包逻辑运行在 TEENet 可信执行底座上。授权与执行在基础设施层面绑定，而非仅作为 UI 流程叠加。',
       },
     ],
   },
-  rulesAndApprovals: {
-    title: '自动化该自动的，授权该授权的',
-    scenarios: [
-      {
-        title: '小额日常操作',
-        description: '在预定义规则范围内的操作正常执行，无需中断、无需等待。',
-        level: 'low',
-      },
-      {
-        title: '超过阈值的转账',
-        description: '触发授权链接，操作等待 Passkey 确认后才继续执行。',
-        level: 'medium',
-      },
-      {
-        title: '未在白名单内的合约调用',
-        description: '直接阻止或升级为更强的审批流程。未授权的合约无法执行。',
-        level: 'high',
-      },
-    ],
-  },
-  trustSection: {
-    title: '为什么这套授权值得信任？',
-    cards: [
-      {
-        title: '授权不是聊天确认，而是独立验证',
-        description: '敏感操作不会因为聊天中的随意回复而继续执行。用户必须通过 Passkey 或生物识别完成独立的授权流程。',
-      },
-      {
-        title: '规则不是前端提示，而是执行边界',
-        description: '阈值和白名单不是装饰。它们决定操作是否可以继续执行。请求可以基于策略被阻止或升级。',
-      },
-      {
-        title: '执行依赖可信底座，而不是普通后台自说自话',
-        description: 'TEENet 使用硬件保护的隔离执行环境来运行敏感钱包逻辑。运行时信任是可验证的，而非仅仅声称。',
-      },
-    ],
-    closingLine: '这意味着：你的 Agent 可以使用钱包，但不能绕过你的授权边界。',
-  },
   builtOnTEENet: {
-    title: '不仅为了更顺滑的体验，更为了可信的执行边界',
+    title: 'TEENet 驱动',
     points: [
       '这是一个构建在 TEENet 上的钱包应用——而非完全开源的钱包技术栈。',
       '它在应用层为 OpenClaw 提供钱包能力。',
@@ -125,7 +87,7 @@ export const zh: ContentData = {
     learnMoreText: '进一步了解 TEENet 的信任与安全机制',
   },
   developerSection: {
-    title: '为 OpenClaw 开发者保留开放接入能力',
+    title: '开发者集成',
     description: '开发者可以接入钱包交互、规则控制和审批流程等集成能力。TEENet 运行时本身不开源，但面向应用的集成接入是开放且直接的。',
     ctaPrimary: '开发者预览',
     ctaSecondary: '申请接入',
@@ -160,7 +122,7 @@ export const zh: ContentData = {
     ],
   },
   finalCTA: {
-    headline: '让 OpenClaw 更有执行力，也更值得信任。',
+    headline: '更强能力，同等控制。',
     body: [
       '用对话管理钱包。',
       '用规则控制风险。',

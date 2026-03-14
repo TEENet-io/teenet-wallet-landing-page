@@ -18,17 +18,6 @@ export interface FeatureItem {
   description: string
 }
 
-export interface ScenarioItem {
-  title: string
-  description: string
-  level: 'low' | 'medium' | 'high'
-}
-
-export interface TrustCardItem {
-  title: string
-  description: string
-}
-
 export interface FAQItem {
   question: string
   answer: string
@@ -72,15 +61,6 @@ export interface ContentData {
   coreFeatures: {
     title: string
     features: FeatureItem[]
-  }
-  rulesAndApprovals: {
-    title: string
-    scenarios: ScenarioItem[]
-  }
-  trustSection: {
-    title: string
-    cards: TrustCardItem[]
-    closingLine: string
   }
   builtOnTEENet: {
     title: string

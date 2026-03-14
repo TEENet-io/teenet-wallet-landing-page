@@ -1,11 +1,14 @@
+import Link from 'next/link'
 import { ContentData } from '@/content/types'
+import { Locale } from '@/lib/i18n'
 import RuntimeDiagram from './mockups/RuntimeDiagram'
 
 interface BuiltOnTEENetProps {
   content: ContentData['builtOnTEENet']
+  locale: Locale
 }
 
-export default function BuiltOnTEENet({ content }: BuiltOnTEENetProps) {
+export default function BuiltOnTEENet({ content, locale }: BuiltOnTEENetProps) {
   return (
     <section className="bg-gray-50 py-24 px-6">
       <div className="max-w-6xl mx-auto">
@@ -44,12 +47,12 @@ export default function BuiltOnTEENet({ content }: BuiltOnTEENetProps) {
               {content.closingPhrase}
             </p>
 
-            <a
-              href="#"
+            <Link
+              href={`/${locale}/teenet`}
               className="inline-block mt-4 text-gray-500 hover:text-gray-700 underline text-sm transition-colors"
             >
               {content.learnMoreText}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

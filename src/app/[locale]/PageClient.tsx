@@ -9,8 +9,6 @@ import Hero from '@/components/Hero'
 import WhyThisMatters from '@/components/WhyThisMatters'
 import HowItWorks from '@/components/HowItWorks'
 import CoreFeatures from '@/components/CoreFeatures'
-import RulesAndApprovals from '@/components/RulesAndApprovals'
-import TrustSection from '@/components/TrustSection'
 import BuiltOnTEENet from '@/components/BuiltOnTEENet'
 import DeveloperSection from '@/components/DeveloperSection'
 import FAQ from '@/components/FAQ'
@@ -81,13 +79,7 @@ export default function PageClient({ content, locale }: PageClientProps) {
         <CoreFeatures content={content.coreFeatures} />
       </ScrollReveal>
       <ScrollReveal>
-        <RulesAndApprovals content={content.rulesAndApprovals} />
-      </ScrollReveal>
-      <ScrollReveal>
-        <TrustSection content={content.trustSection} />
-      </ScrollReveal>
-      <ScrollReveal>
-        <BuiltOnTEENet content={content.builtOnTEENet} />
+        <BuiltOnTEENet content={content.builtOnTEENet} locale={locale} />
       </ScrollReveal>
       <ScrollReveal>
         <DeveloperSection content={content.developerSection} locale={locale} />
