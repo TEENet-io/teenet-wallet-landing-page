@@ -45,19 +45,21 @@ export const en: ContentData = {
     },
   },
   howItWorks: {
-    title: 'How It Works',
+    eyebrow: 'How it works',
+    title: 'From chat to action — with control built in',
+    subtitle: 'Ask your agent. Rules check the action. Approve if needed.',
     steps: [
       {
-        title: 'Chat to Transact',
-        description: 'Create wallets on supported chains like Ethereum or Solana. Check balances, review transaction history, initiate transfers and contract calls — all through conversation.',
+        title: 'Ask your agent',
+        description: 'Start with a simple request in OpenClaw.',
       },
       {
-        title: 'Set the Rules',
-        description: 'Define transfer thresholds that require approval, specify allowed contract addresses, flag sensitive actions for confirmation, and optionally require authorization for rule changes themselves.',
+        title: 'Rules check the action',
+        description: 'Limits and approvals apply automatically.',
       },
       {
-        title: 'Approve with Passkey',
-        description: 'When an action triggers a rule, you receive an approval link in chat. Open the approval page, verify with Passkey or biometrics, and the action proceeds only after successful approval.',
+        title: 'Approve if needed',
+        description: 'Use Passkey when an action needs your sign-off.',
       },
     ],
   },

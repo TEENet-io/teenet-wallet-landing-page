@@ -63,7 +63,9 @@ export interface ContentData {
     }
   }
   howItWorks: {
+    eyebrow: string
     title: string
+    subtitle: string
     steps: StepItem[]
   }
   coreFeatures: {

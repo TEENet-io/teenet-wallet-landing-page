@@ -45,19 +45,21 @@ export const zh: ContentData = {
     },
   },
   howItWorks: {
-    title: '如何使用',
+    eyebrow: 'How it works',
+    title: '从聊天到执行，控制始终在线',
+    subtitle: '告诉 Agent，规则先检查，需要时你再确认。',
     steps: [
       {
-        title: '对话即交易',
-        description: '在 Ethereum、Solana 等支持的链上创建钱包。查看余额、浏览交易历史、发起转账和合约调用——全部通过对话完成。',
+        title: '告诉 Agent 你要做什么',
+        description: '在 OpenClaw 里发起一个简单请求。',
       },
       {
-        title: '设定规则',
-        description: '定义需要审批的转账阈值、指定允许的合约地址、标记需要确认的敏感操作，规则变更本身也可以要求授权。',
+        title: '规则先检查这次操作',
+        description: '限额和批准要求会自动生效。',
       },
       {
-        title: 'Passkey 授权',
-        description: '当操作触发规则时，你会在聊天中收到授权链接。打开授权页面，通过 Passkey 或生物识别验证，操作才会继续执行。',
+        title: '需要时，再由你确认',
+        description: '当操作需要你点头时，用 Passkey 快速确认。',
       },
     ],
   },

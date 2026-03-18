@@ -54,13 +54,13 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
             </p>
 
             {/* Benefit Chips */}
-            <div className="grid grid-cols-2 gap-2 mt-6">
+            <div className="flex flex-wrap gap-2.5 mt-6">
               {content.chips.map((chip) => (
                 <span
                   key={chip}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-slate-700 bg-slate-800/60 px-3 py-1.5 text-xs text-slate-300"
+                  className="inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-800/50 px-3.5 py-2 text-[13px] text-slate-300 leading-tight"
                 >
-                  <svg className="h-3 w-3 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <svg className="h-3.5 w-3.5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                   {chip}
