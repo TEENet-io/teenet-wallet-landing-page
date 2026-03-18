@@ -42,17 +42,25 @@ export interface ContentData {
     ctaSecondary: string
   }
   hero: {
+    eyebrow: string
     headline: string
     subheadline: string
-    supporting: string
-    tags: string[]
+    chips: string[]
     ctaPrimary: string
     ctaSecondary: string
+    supporting: string
+    trustLine: string
   }
   whyThisMatters: {
+    transition: string
     title: string
-    intro: string
-    items: CardItem[]
+    subtitle: string
+    cards: CardItem[]
+    passkey: {
+      tooltipTitle: string
+      tooltipBody: string
+      tooltipRef: string
+    }
   }
   howItWorks: {
     title: string
