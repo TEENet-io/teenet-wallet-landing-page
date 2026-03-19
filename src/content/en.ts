@@ -145,21 +145,34 @@ export const en: ContentData = {
     supporting: 'Built for OpenClaw. Protected where wallet control matters most.',
   },
   footer: {
-    brandLine: 'TEENet Secure Wallet',
+    brandName: 'TEENet Secure Wallet',
+    brandLine: 'Built for OpenClaw. Protected where wallet control matters most.',
     linkGroups: [
       {
         title: 'Product',
         links: [
           { label: 'Product', href: '#product' },
-          { label: 'How It Works', href: '#how-it-works' },
+          { label: 'How it works', href: '#how-it-works' },
           { label: 'Security', href: '#security' },
+          { label: 'FAQ', href: '#faq' },
         ],
       },
       {
         title: 'Developers',
         links: [
-          { label: 'Developers', href: '#developers' },
-          { label: 'FAQ', href: '#faq' },
+          { label: 'GitHub', href: '#' },
+          { label: 'Docs', href: '#' },
+          { label: 'Developer Preview', href: '#developers' },
+          { label: 'Contact', href: '#' },
+        ],
+      },
+      {
+        title: 'Resources',
+        links: [
+          { label: 'Watch Demo', href: '#' },
+          { label: 'Join Beta', href: '#' },
+          { label: 'OpenClaw', href: '#' },
+          { label: 'TEENet', href: '#' },
         ],
       },
       {
@@ -171,7 +184,7 @@ export const en: ContentData = {
         ],
       },
     ],
-    bottomLine: 'Built for OpenClaw. Powered by TEENet.',
+    copyright: '\u00a9 2026 TEENet Secure Wallet',
   },
   betaForm: {
     title: 'Join the Beta',

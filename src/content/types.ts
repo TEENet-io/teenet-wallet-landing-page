@@ -100,9 +100,10 @@ export interface ContentData {
     supporting: string
   }
   footer: {
+    brandName: string
     brandLine: string
     linkGroups: FooterLinkGroup[]
-    bottomLine: string
+    copyright: string
   }
   betaForm: {
     title: string

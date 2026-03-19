@@ -145,33 +145,46 @@ export const zh: ContentData = {
     supporting: '为 OpenClaw 而生，在最关键的钱包控制环节提供保护。',
   },
   footer: {
-    brandLine: 'TEENet Secure Wallet',
+    brandName: 'TEENet Secure Wallet',
+    brandLine: '为 OpenClaw 而生，在最关键的钱包控制环节提供保护。',
     linkGroups: [
       {
         title: '产品',
         links: [
           { label: '产品', href: '#product' },
-          { label: '如何工作', href: '#how-it-works' },
-          { label: '安全与授权', href: '#security' },
+          { label: 'How it works', href: '#how-it-works' },
+          { label: '安全性', href: '#security' },
+          { label: '常见问题', href: '#faq' },
         ],
       },
       {
         title: '开发者',
         links: [
-          { label: '开发者', href: '#developers' },
-          { label: '常见问题', href: '#faq' },
+          { label: 'GitHub', href: '#' },
+          { label: '文档', href: '#' },
+          { label: 'Developer Preview', href: '#developers' },
+          { label: '联系我们', href: '#' },
         ],
       },
       {
-        title: '法律',
+        title: '资源',
         links: [
-          { label: '隐私政策', href: '#' },
-          { label: '使用条款', href: '#' },
+          { label: '观看演示', href: '#' },
+          { label: '加入 Beta', href: '#' },
+          { label: 'OpenClaw', href: '#' },
+          { label: 'TEENet', href: '#' },
+        ],
+      },
+      {
+        title: '法务',
+        links: [
+          { label: '隐私', href: '#' },
+          { label: '条款', href: '#' },
           { label: '联系我们', href: '#' },
         ],
       },
     ],
-    bottomLine: '为 OpenClaw 而生，由 TEENet 提供支持。',
+    copyright: '\u00a9 2026 TEENet Secure Wallet',
   },
   betaForm: {
     title: '申请试用',
