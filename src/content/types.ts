@@ -85,8 +85,11 @@ export interface ContentData {
     points: { title: string; description: string }[]
   }
   faq: {
+    eyebrow: string
     title: string
+    subtitle: string
     items: FAQItem[]
+    ctaBridge: string
   }
   finalCTA: {
     headline: string

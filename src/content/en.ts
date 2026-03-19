@@ -101,33 +101,40 @@ export const en: ContentData = {
     ],
   },
   faq: {
-    title: 'Frequently Asked Questions',
+    eyebrow: 'FAQ',
+    title: 'Questions you may still have',
+    subtitle: 'Here are the most common questions about how the wallet works, how approvals work, and how to get started.',
     items: [
       {
-        question: 'What is this product?',
-        answer: "TEENet Secure Wallet is a wallet application for OpenClaw that lets users create and manage on-chain wallets through chat, set rules for execution, and approve sensitive actions with Passkey. It runs on TEENet's trusted runtime.",
-      },
-      {
-        question: 'How is it different from a regular wallet?',
-        answer: 'Unlike a regular wallet, TEENet Secure Wallet enforces execution boundaries through rules and requires independent Passkey approval for sensitive actions. The wallet logic runs inside a trusted execution environment, not a standard backend.',
+        question: 'What makes this different from a regular wallet?',
+        answer: 'This wallet is built for agent workflows. Your agent can help with wallet actions, but limits, approvals, and execution boundaries stay in place.',
       },
       {
         question: 'Does every action require approval?',
-        answer: 'No. Routine actions within predefined rules execute without interruption. Only actions that exceed thresholds or interact with contracts outside the allowlist trigger approval.',
+        answer: 'No. Routine actions can move through normally. Approval is only required when an action crosses a rule you\'ve set, such as a transfer limit or another sensitive condition.',
+      },
+      {
+        question: 'Can the agent move funds on its own?',
+        answer: 'The agent can only act within the rules and approval requirements attached to the wallet. It does not get unlimited authority.',
       },
       {
         question: 'How does approval work?',
-        answer: 'When a sensitive action is triggered, you receive an approval link in chat. You open the approval page and verify with Passkey or biometrics. The action proceeds only after successful verification.',
+        answer: 'When an action needs your sign-off, you review it and confirm it with Passkey in a dedicated approval flow.',
       },
       {
-        question: 'Why is this approval flow trustworthy?',
-        answer: 'Approval is not a chat reply — it is an independent verification step using Passkey. Rules define real execution boundaries, not UI hints. And the wallet logic runs on TEENet, a hardware-protected trusted execution environment where trust is verifiable.',
+        question: 'Why use Passkey here?',
+        answer: 'Passkey makes important approvals feel familiar and simple, while keeping them tied to a stronger, user-controlled confirmation step.',
       },
       {
-        question: 'Is it fully open source?',
-        answer: 'The application integration layer is open. TEENet runtime itself is not open source. The product provides trusted execution capabilities without requiring the full stack to be open.',
+        question: 'Is this built for developers too?',
+        answer: 'Yes. Developers and builders can explore the wallet app and skills on GitHub, then adapt the flow for their own OpenClaw experiences.',
+      },
+      {
+        question: 'How do I get started?',
+        answer: 'You can join the beta, watch the demo, or go to GitHub if you want to explore the implementation and build on top of it.',
       },
     ],
+    ctaBridge: 'Ready to try it — or build with it?',
   },
   finalCTA: {
     headline: 'More Power. Same Control.',

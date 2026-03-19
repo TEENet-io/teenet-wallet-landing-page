@@ -11,7 +11,7 @@ interface FAQProps {
 }
 
 export default function FAQ({ content, locale }: FAQProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   function handleToggle(index: number) {
     const isOpening = openIndex !== index
@@ -22,12 +22,24 @@ export default function FAQ({ content, locale }: FAQProps) {
   }
 
   return (
-    <section id="faq" className="bg-gray-50 py-24 px-6">
+    <section id="faq" className="bg-white py-24 px-6">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center">
+        {/* Eyebrow */}
+        <p className="text-sm font-medium text-gray-400 tracking-widest uppercase text-center">
+          {content.eyebrow}
+        </p>
+
+        {/* Title */}
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mt-3">
           {content.title}
         </h2>
 
+        {/* Subtitle */}
+        <p className="text-base text-gray-500 text-center mt-3 leading-relaxed">
+          {content.subtitle}
+        </p>
+
+        {/* Accordion */}
         <div className="mt-12">
           {content.items.map((item, index) => {
             const isOpen = openIndex === index
@@ -65,6 +77,11 @@ export default function FAQ({ content, locale }: FAQProps) {
             )
           })}
         </div>
+
+        {/* CTA bridge */}
+        <p className="text-base font-medium text-gray-900 text-center mt-12">
+          {content.ctaBridge}
+        </p>
       </div>
     </section>
   )
