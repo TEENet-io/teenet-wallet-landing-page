@@ -137,15 +137,12 @@ export const zh: ContentData = {
     ctaBridge: '准备好试试看，或者直接开始构建了吗？',
   },
   finalCTA: {
-    headline: '更强能力，同等控制。',
-    body: [
-      '用对话管理钱包。',
-      '用规则控制风险。',
-      '用 Passkey 批准关键动作。',
-    ],
-    ctaPrimary: '申请试用',
-    ctaSecondary: '查看 Demo',
-    supporting: '为 OpenClaw 而生，由 TEENet 提供可信执行能力',
+    title: '准备好试试看，或者直接开始构建了吗？',
+    subtitle: '让 OpenClaw agent 真正用上钱包，同时把控制感、安全确认和顺手的流程留在你手里。',
+    ctaPrimary: '加入 Beta',
+    ctaSecondary: '前往 GitHub',
+    ctaTertiary: '观看演示',
+    supporting: '为 OpenClaw 而生，在最关键的钱包控制环节提供保护。',
   },
   footer: {
     brandLine: 'TEENet Secure Wallet',

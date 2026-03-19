@@ -92,10 +92,11 @@ export interface ContentData {
     ctaBridge: string
   }
   finalCTA: {
-    headline: string
-    body: string[]
+    title: string
+    subtitle: string
     ctaPrimary: string
     ctaSecondary: string
+    ctaTertiary: string
     supporting: string
   }
   footer: {

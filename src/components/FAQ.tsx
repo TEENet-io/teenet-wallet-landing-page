@@ -78,10 +78,6 @@ export default function FAQ({ content, locale }: FAQProps) {
           })}
         </div>
 
-        {/* CTA bridge */}
-        <p className="text-base font-medium text-gray-900 text-center mt-12">
-          {content.ctaBridge}
-        </p>
       </div>
     </section>
   )

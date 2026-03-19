@@ -137,15 +137,12 @@ export const en: ContentData = {
     ctaBridge: 'Ready to try it — or build with it?',
   },
   finalCTA: {
-    headline: 'More Power. Same Control.',
-    body: [
-      'Use chat to manage wallets.',
-      'Use rules to control risk.',
-      'Use Passkey to approve critical actions.',
-    ],
+    title: 'Ready to try it — or build with it?',
+    subtitle: 'Use your OpenClaw agent with more control, safer approvals, and a wallet flow built for real use.',
     ctaPrimary: 'Join Beta',
-    ctaSecondary: 'Watch Demo',
-    supporting: 'Built for OpenClaw. Powered by TEENet trusted execution.',
+    ctaSecondary: 'View on GitHub',
+    ctaTertiary: 'Watch Demo',
+    supporting: 'Built for OpenClaw. Protected where wallet control matters most.',
   },
   footer: {
     brandLine: 'TEENet Secure Wallet',
