@@ -63,24 +63,27 @@ export const en: ContentData = {
       },
     ],
   },
-  coreFeatures: {
-    title: 'Built for Agent-Driven Transactions',
-    features: [
+  whyTrustIt: {
+    eyebrow: 'Why you can trust it',
+    title: 'Protected where it matters most',
+    subtitle: 'Because the most sensitive parts of the wallet are not left to the agent or ordinary backend logic alone.',
+    supportingLine: 'Protected by TEENet where wallet control matters most.',
+    cards: [
       {
-        title: 'Chat-Native',
-        description: 'Create wallets, check balances and history, initiate transfers and contract calls — all through natural conversation with OpenClaw.',
+        title: 'Keys stay out of reach',
+        description: 'Signing happens in a protected environment, not inside the agent or a conventional backend.',
       },
       {
-        title: 'Policy-Enforced',
-        description: 'Transfer thresholds, contract allowlists, and high-risk action restrictions form the default execution boundary. Policy is enforced, not suggested.',
+        title: 'Rules are enforced, not optional',
+        description: 'Limits, contract restrictions, and approval requirements are applied before an action can go through.',
       },
       {
-        title: 'Independent Approval',
-        description: 'Sensitive actions generate an approval link leading to a dedicated approval page. Verification uses Passkey — execution proceeds only after approval.',
+        title: 'You approve the important moments',
+        description: 'When a sensitive action needs your sign-off, confirm it with Passkey in a familiar flow.',
       },
       {
-        title: 'Trusted Runtime',
-        description: "Sensitive wallet logic runs on TEENet's trusted runtime. Authorization and execution are tied together at the infrastructure level, not layered on as a UI flow.",
+        title: 'No single backend gets full control',
+        description: 'Critical wallet actions do not depend on one ordinary service acting alone.',
       },
     ],
   },

@@ -63,24 +63,27 @@ export const zh: ContentData = {
       },
     ],
   },
-  coreFeatures: {
-    title: '为 Agent 驱动的交易而生',
-    features: [
+  whyTrustIt: {
+    eyebrow: 'Why you can trust it',
+    title: '最关键的部分，始终受到保护',
+    subtitle: '因为钱包里最敏感的部分，不会交给 Agent 或普通后端单独处理。',
+    supportingLine: '在最关键的钱包控制环节，由 TEENet 提供保护。',
+    cards: [
       {
-        title: '对话原生',
-        description: '通过与 OpenClaw 的自然对话创建钱包、查看余额和历史、发起转账和合约调用。',
+        title: '密钥和签名权不暴露',
+        description: '签名在受保护环境中完成，不交给 Agent，也不交给普通后端直接处理。',
       },
       {
-        title: '策略强制',
-        description: '转账阈值、合约白名单、高风险操作限制构成默认执行边界。策略是强制执行的，不只是建议。',
+        title: '规则不是建议，而是硬约束',
+        description: '限额、合约限制和审批要求会在执行前生效，不会被 Agent 绕过去。',
       },
       {
-        title: '独立授权',
-        description: '敏感操作会生成授权链接，引导到独立的授权页面。验证使用 Passkey——只有完成授权后操作才会执行。',
+        title: '重要的时候，决定权回到你手里',
+        description: '当敏感操作需要你点头时，用熟悉的 Passkey 流程快速确认。',
       },
       {
-        title: '可信硬件',
-        description: '敏感钱包逻辑运行在 TEENet 可信执行底座上。授权与执行在基础设施层面绑定，而非仅作为 UI 流程叠加。',
+        title: '没有单一后端能拿到全部控制权',
+        description: '关键的钱包操作，不会只依赖某一个普通服务单独决定。',
       },
     ],
   },

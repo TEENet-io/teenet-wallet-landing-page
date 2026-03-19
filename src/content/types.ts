@@ -68,9 +68,12 @@ export interface ContentData {
     subtitle: string
     steps: StepItem[]
   }
-  coreFeatures: {
+  whyTrustIt: {
+    eyebrow: string
     title: string
-    features: FeatureItem[]
+    subtitle: string
+    supportingLine: string
+    cards: CardItem[]
   }
   builtOnTEENet: {
     title: string

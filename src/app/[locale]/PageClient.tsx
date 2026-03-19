@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import WhyThisMatters from '@/components/WhyThisMatters'
 import HowItWorks from '@/components/HowItWorks'
-import CoreFeatures from '@/components/CoreFeatures'
+import WhyTrustIt from '@/components/WhyTrustIt'
 import BuiltOnTEENet from '@/components/BuiltOnTEENet'
 import DeveloperSection from '@/components/DeveloperSection'
 import FAQ from '@/components/FAQ'
@@ -76,7 +76,7 @@ export default function PageClient({ content, locale }: PageClientProps) {
         <HowItWorks content={content.howItWorks} />
       </ScrollReveal>
       <ScrollReveal>
-        <CoreFeatures content={content.coreFeatures} />
+        <WhyTrustIt content={content.whyTrustIt} />
       </ScrollReveal>
       <ScrollReveal>
         <BuiltOnTEENet content={content.builtOnTEENet} locale={locale} />
