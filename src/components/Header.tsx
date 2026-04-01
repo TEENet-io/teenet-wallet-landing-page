@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { ContentData } from '@/content/types'
 import { Locale } from '@/lib/i18n'
 import { trackEvent } from '@/lib/analytics'
@@ -95,9 +96,12 @@ export default function Header({ content, locale, onBetaClick }: HeaderProps) {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
           {/* Logo + Brand */}
           <div className="flex items-center gap-2.5 shrink-0">
-            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900">
-              <span className="text-sm font-bold text-white leading-none">T</span>
-            </div>
+            <Image
+              src={overHero ? '/teenet-wallet-logo-nav-dark.svg' : '/teenet-wallet-logo-nav-light.svg'}
+              alt="TEENet OpenClaw Wallet"
+              width={28}
+              height={28}
+            />
             <span className={`text-sm font-semibold whitespace-nowrap transition-colors duration-300 ${overHero ? 'text-white' : 'text-gray-900'}`}>
               {content.brandName}
             </span>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Dark circle background -->
+  <circle cx="60" cy="60" r="56" fill="#0F1923"/>
+  <!-- Outer rounded rect border -->
+  <rect x="22" y="26" width="76" height="68" rx="8" fill="none" stroke="#22D68A" stroke-width="2.2"/>
+  <!-- Bracket corner accents (thicker, overlaid on border corners) -->
+  <!-- Top-left -->
+  <line x1="22" y1="36" x2="22" y2="26" stroke="#22D68A" stroke-width="3" stroke-linecap="round"/>
+  <line x1="22" y1="26" x2="32" y2="26" stroke="#22D68A" stroke-width="3" stroke-linecap="round"/>
+  <!-- Top-right -->
+  <line x1="88" y1="26" x2="98" y2="26" stroke="#22D68A" stroke-width="3" stroke-linecap="round"/>
+  <line x1="98" y1="26" x2="98" y2="36" stroke="#22D68A" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bottom-left -->
+  <line x1="22" y1="84" x2="22" y2="94" stroke="#22D68A" stroke-width="3" stroke-linecap="round"/>
+  <line x1="22" y1="94" x2="32" y2="94" stroke="#22D68A" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bottom-right -->
+  <line x1="88" y1="94" x2="98" y2="94" stroke="#22D68A" stroke-width="3" stroke-linecap="round"/>
+  <line x1="98" y1="84" x2="98" y2="94" stroke="#22D68A" stroke-width="3" stroke-linecap="round"/>
+  <!-- T letterform -->
+  <line x1="45" y1="50" x2="75" y2="50" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="60" y1="50" x2="60" y2="76" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+</svg>
