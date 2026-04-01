@@ -105,6 +105,7 @@ export interface ContentData {
     ctaPrimary: string
     ctaSecondary: string
     ctaTertiary: string
+    ctaPlatform: string
     supporting: string
   }
   footer: {

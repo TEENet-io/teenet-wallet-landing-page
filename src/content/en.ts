@@ -115,11 +115,11 @@ export const en: ContentData = {
   faq: {
     eyebrow: 'FAQ',
     title: 'Questions you may still have',
-    subtitle: 'Here are the most common questions about how the wallet works, how approvals work, and how to get started.',
+    subtitle: 'About the wallet, approvals, and building on TEENet.',
     items: [
       {
         question: 'What makes this different from a regular wallet?',
-        answer: 'This wallet is built for agent workflows. Your agent can help with wallet actions, but limits, approvals, and execution boundaries stay in place.',
+        answer: 'Most wallets either give your agent full access or no access. This wallet lets your agent handle routine actions while enforcing transfer limits, contract allowlists, and approval requirements inside a hardware-protected environment — not just in application code.',
       },
       {
         question: 'Does every action require approval?',
@@ -149,6 +149,14 @@ export const en: ContentData = {
         question: 'How do I get started?',
         answer: 'You can join the beta, watch the demo, or go to GitHub if you want to explore the implementation and build on top of it.',
       },
+      {
+        question: 'Can I build my own agent app on TEENet?',
+        answer: 'Yes. TEENet is a general-purpose platform for applications that need hardware-isolated execution, managed key custody, and configurable approval policies. The wallet is one example — you can build any AI agent application that needs secure key management and rule enforcement. Start with the SDK at github.com/TEENet-io/teenet-sdk.',
+      },
+      {
+        question: 'Can I export my private keys?',
+        answer: 'No. During the Beta period, private keys are generated and stored exclusively inside hardware-protected environments and cannot be exported. This is a security decision to protect your assets while the platform matures — it ensures your keys are never exposed to software or operators. Your on-chain assets are always yours: you can transfer them to any external wallet at any time. We will revisit this policy based on community feedback and security assessments as the platform evolves.',
+      },
     ],
     ctaBridge: 'Ready to try it — or build with it?',
   },
@@ -158,6 +166,7 @@ export const en: ContentData = {
     ctaPrimary: 'Join Beta',
     ctaSecondary: 'View on GitHub',
     ctaTertiary: 'Watch Demo',
+    ctaPlatform: 'Explore TEENet',
     supporting: 'Built for OpenClaw. Protected where wallet control matters most.',
   },
   footer: {
@@ -178,8 +187,10 @@ export const en: ContentData = {
         links: [
           { label: 'GitHub', href: '#' },
           { label: 'Docs', href: '#' },
+          { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
+          { label: 'TEENet Platform', href: 'https://github.com/TEENet-io' },
           { label: 'Developer Preview', href: '#developers' },
-          { label: 'Contact', href: '#' },
+          { label: 'Contact', href: 'mailto:contact@teenet.io' },
         ],
       },
       {
@@ -188,15 +199,15 @@ export const en: ContentData = {
           { label: 'Watch Demo', href: '#' },
           { label: 'Join Beta', href: '#' },
           { label: 'OpenClaw', href: '#' },
-          { label: 'TEENet', href: '#' },
+          { label: 'TEENet', href: 'https://github.com/TEENet-io' },
         ],
       },
       {
         title: 'Legal',
         links: [
-          { label: 'Privacy', href: '#' },
-          { label: 'Terms', href: '#' },
-          { label: 'Contact', href: '#' },
+          { label: 'Privacy', href: '/en/privacy' },
+          { label: 'Terms', href: '/en/terms' },
+          { label: 'Contact', href: 'mailto:contact@teenet.io' },
         ],
       },
     ],

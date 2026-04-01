@@ -115,11 +115,11 @@ export const zh: ContentData = {
   faq: {
     eyebrow: 'FAQ',
     title: '你可能还会想问',
-    subtitle: '下面这些问题，基本涵盖了大家最关心的：它怎么工作、什么时候需要批准，以及从哪里开始。',
+    subtitle: '关于钱包、审批，以及在 TEENet 上构建。',
     items: [
       {
         question: '它和普通钱包有什么不一样？',
-        answer: '这不是一个在钱包外面套了聊天界面的产品。它是为 Agent 使用场景设计的：Agent 能帮你做事，但限额、审批和执行边界仍然存在。',
+        answer: '大多数钱包要么让 Agent 拥有完全访问权，要么完全没有。这个钱包让 Agent 处理日常操作，同时在硬件保护的环境中执行转账限额、合约白名单和审批要求——而不仅仅是在应用代码中。',
       },
       {
         question: '是不是每个操作都要批准？',
@@ -149,6 +149,14 @@ export const zh: ContentData = {
         question: '我该怎么开始？',
         answer: '你可以先申请 Beta、观看演示，或者直接去 GitHub 看实现并开始构建。',
       },
+      {
+        question: '我可以在 TEENet 上构建自己的 Agent 应用吗？',
+        answer: '可以。TEENet 是一个通用平台，适用于需要硬件隔离执行、托管密钥保管和可配置审批策略的应用。钱包只是其中一个例子——你可以构建任何需要安全密钥管理和规则执行的 AI Agent 应用。从 github.com/TEENet-io/teenet-sdk 开始。',
+      },
+      {
+        question: '我可以导出我的私钥吗？',
+        answer: '不可以。在 Beta 期间，私钥完全在硬件保护的环境内生成和存储，无法导出。这是一项保护您资产的安全决策，在平台成熟的过程中确保您的密钥永远不会暴露给软件或运营方。您的链上资产始终属于您：您可以随时将它们转移到任何外部钱包。随着平台的发展，我们将根据社区反馈和安全评估重新审视此政策。',
+      },
     ],
     ctaBridge: '准备好试试看，或者直接开始构建了吗？',
   },
@@ -158,6 +166,7 @@ export const zh: ContentData = {
     ctaPrimary: '加入 Beta',
     ctaSecondary: '前往 GitHub',
     ctaTertiary: '观看演示',
+    ctaPlatform: '探索 TEENet',
     supporting: '为 OpenClaw 而生，在最关键的钱包控制环节提供保护。',
   },
   footer: {
@@ -178,8 +187,10 @@ export const zh: ContentData = {
         links: [
           { label: 'GitHub', href: '#' },
           { label: '文档', href: '#' },
+          { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
+          { label: 'TEENet Platform', href: 'https://github.com/TEENet-io' },
           { label: 'Developer Preview', href: '#developers' },
-          { label: '联系我们', href: '#' },
+          { label: '联系我们', href: 'mailto:contact@teenet.io' },
         ],
       },
       {
@@ -188,15 +199,15 @@ export const zh: ContentData = {
           { label: '观看演示', href: '#' },
           { label: '加入 Beta', href: '#' },
           { label: 'OpenClaw', href: '#' },
-          { label: 'TEENet', href: '#' },
+          { label: 'TEENet', href: 'https://github.com/TEENet-io' },
         ],
       },
       {
         title: '法务',
         links: [
-          { label: '隐私', href: '#' },
-          { label: '条款', href: '#' },
-          { label: '联系我们', href: '#' },
+          { label: '隐私', href: '/zh/privacy' },
+          { label: '条款', href: '/zh/terms' },
+          { label: '联系我们', href: 'mailto:contact@teenet.io' },
         ],
       },
     ],

@@ -57,14 +57,22 @@ export default function FinalCTA({ content, locale, onBetaClick }: FinalCTAProps
           </a>
         </div>
 
-        {/* Tertiary link */}
-        <div className="mt-4">
+        {/* Tertiary links */}
+        <div className="mt-4 flex justify-center gap-6 flex-wrap">
           <button
             onClick={handleTertiaryClick}
             className="text-sm text-gray-400 hover:text-gray-600 underline underline-offset-2 transition-colors"
           >
             {content.ctaTertiary}
           </button>
+          <a
+            href="https://github.com/TEENet-io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-400 hover:text-gray-600 underline underline-offset-2 transition-colors"
+          >
+            {content.ctaPlatform} &rarr;
+          </a>
         </div>
 
         {/* Supporting line */}
