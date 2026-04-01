@@ -36,13 +36,13 @@ export const en: ContentData = {
     },
   },
   whyThisMatters: {
-    transition: 'You want your agent to help — not to take over.',
+    transition: 'What changes when your agent has a wallet',
     title: 'Why you\'d actually want this wallet',
-    subtitle: 'Because giving an agent wallet access should feel useful, controlled, and natural.',
+    subtitle: 'Your agent handles the routine. You handle what matters. Here\'s what that looks like.',
     cards: [
-      { title: 'Let your agent do real work', description: 'Check balances, prepare transactions, and handle routine actions — without doing everything yourself.' },
-      { title: 'Stay in control', description: 'Your agent acts within the rules you set, so transfers, contract interactions, and other sensitive actions don\'t happen unchecked.' },
-      { title: 'Step in when it matters', description: 'When something needs your sign-off, confirm it with a familiar Passkey flow that keeps security simple.' },
+      { title: 'Let your agent do real work', description: 'Balances, transfers, activity checks — your agent handles day-to-day wallet tasks so you don\'t have to.' },
+      { title: 'Stay in control', description: 'Set transfer limits, restrict which contracts your agent can interact with, and require approval for rule changes — all configurable by you.' },
+      { title: 'Step in when it matters', description: 'When an action exceeds your rules, you get a clear review prompt. One Passkey confirmation and it\'s done — no gas fees, no multisig coordination.' },
     ],
     passkey: {
       tooltipTitle: 'Why Passkey for approval?',

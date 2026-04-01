@@ -36,13 +36,13 @@ export const zh: ContentData = {
     },
   },
   whyThisMatters: {
-    transition: '你想让 Agent 帮你做事，不是替你做主。',
+    transition: '当你的 Agent 有了钱包，会发生什么',
     title: '为什么你会真的想用这个钱包',
-    subtitle: '因为 Agent 用钱包这件事，既要真的有用，也要始终可控。',
+    subtitle: '日常操作交给 Agent，重要的事你来把关。下面就是它实际的样子。',
     cards: [
-      { title: '让 Agent 真正帮你做事', description: '查余额、准备交易、处理日常操作——不用每一步都自己完成。' },
-      { title: '该管住的，始终管得住', description: 'Agent 只能在你设定的规则里行动。转账、合约交互和其他敏感操作，不会在你看不见的地方越界发生。' },
-      { title: '重要的时候，你来确认', description: '当操作需要你点头时，用熟悉的 Passkey 流程快速确认，不把安全变成额外负担。' },
+      { title: '让 Agent 真正帮你做事', description: '查余额、转账、查看最近交易——日常钱包操作交给 Agent，你不用亲自动手。' },
+      { title: '该管住的，始终管得住', description: '设定转账限额、限制 Agent 可以交互的合约、要求规则变更需审批——一切由你配置。' },
+      { title: '重要的时候，你来确认', description: '当操作超出你设定的规则，你会收到清晰的审核提示。一次 Passkey 确认即可完成——不用付 gas 费，不用多签协调。' },
     ],
     passkey: {
       tooltipTitle: '为什么这里用 Passkey？',
