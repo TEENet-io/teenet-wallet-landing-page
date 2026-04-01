@@ -10,6 +10,7 @@ import WhyThisMatters from '@/components/WhyThisMatters'
 import HowItWorks from '@/components/HowItWorks'
 import WhyTrustIt from '@/components/WhyTrustIt'
 import Developers from '@/components/Developers'
+import BeyondWallet from '@/components/BeyondWallet'
 import FAQ from '@/components/FAQ'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
@@ -79,6 +80,9 @@ export default function PageClient({ content, locale }: PageClientProps) {
       </ScrollReveal>
       <ScrollReveal>
         <Developers content={content.developers} />
+      </ScrollReveal>
+      <ScrollReveal>
+        <BeyondWallet content={content.beyondWallet} />
       </ScrollReveal>
       <ScrollReveal>
         <FAQ content={content.faq} locale={locale} />

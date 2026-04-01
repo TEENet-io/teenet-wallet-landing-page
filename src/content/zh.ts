@@ -105,6 +105,13 @@ export const zh: ContentData = {
       { title: 'Fork 并构建', description: '把钱包作为起点。换 UI、改规则、接入你自己的 Agent。' },
     ],
   },
+  beyondWallet: {
+    eyebrow: 'BEYOND THE WALLET',
+    title: 'TEENet 是一个平台——不只是钱包的后端',
+    description: '这个钱包只是 TEENet 上的一个应用。平台提供硬件隔离执行、托管密钥保管和可配置的审批策略——从 AI Agent 钱包到自动交易系统，再到跨链桥，任何需要这些能力的应用都可以使用。',
+    tags: ['硬件隔离运行时', '托管密钥保管', '可配置审批策略'],
+    cta: '探索 TEENet 平台',
+  },
   faq: {
     eyebrow: 'FAQ',
     title: '你可能还会想问',

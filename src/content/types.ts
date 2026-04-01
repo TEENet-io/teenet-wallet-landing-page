@@ -85,6 +85,13 @@ export interface ContentData {
     ctaSecondary: string
     points: { title: string; description: string }[]
   }
+  beyondWallet: {
+    eyebrow: string
+    title: string
+    description: string
+    tags: string[]
+    cta: string
+  }
   faq: {
     eyebrow: string
     title: string

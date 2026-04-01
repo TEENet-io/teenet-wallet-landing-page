@@ -105,6 +105,13 @@ export const en: ContentData = {
       { title: 'Fork and build', description: 'Use the wallet as a starting point. Swap the UI, change the rules, connect your own agent.' },
     ],
   },
+  beyondWallet: {
+    eyebrow: 'BEYOND THE WALLET',
+    title: 'TEENet is a platform — not just a wallet backend',
+    description: 'This wallet is one application built on TEENet. The platform provides hardware-isolated execution, managed key custody, and configurable approval policies for any application that needs them — from AI agent wallets to autonomous trading systems to cross-chain bridges.',
+    tags: ['Hardware-isolated runtime', 'Managed key custody', 'Configurable approval policies'],
+    cta: 'Explore TEENet Platform',
+  },
   faq: {
     eyebrow: 'FAQ',
     title: 'Questions you may still have',
