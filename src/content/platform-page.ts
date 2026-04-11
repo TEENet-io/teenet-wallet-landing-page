@@ -81,9 +81,8 @@ export const platformPageEn: PlatformPageContent = {
   fromWallet: {
     title: 'The wallet was just one example',
     body: [
-      'You just saw a wallet where an AI agent can manage assets without ever touching a private key. Spending limits enforced by hardware. Approval flows that no backend can bypass. Keys that not even the operator can access.',
-      'That security model isn\u2019t specific to wallets. Any application where an autonomous agent handles sensitive operations \u2014 signing transactions, managing keys, enforcing rules \u2014 faces the same fundamental problems.',
-      'The same problem extends beyond blockchain keys. API keys, OAuth tokens, database credentials \u2014 any secret your agent needs to act on the world faces the same risks: leaked from .env files, exposed in logs, or stolen from compromised servers.',
+      'You just saw a wallet where an AI agent manages assets without ever touching a private key. Spending limits enforced by hardware. Approval flows no backend can bypass.',
+      'That security model isn\u2019t specific to wallets \u2014 or even to blockchain keys. Any secret your agent needs to act on the world (private keys, API keys, OAuth tokens) faces the same risks.',
       'TEENet is the infrastructure that makes it possible.',
     ],
   },
@@ -92,19 +91,19 @@ export const platformPageEn: PlatformPageContent = {
     title: 'If your agent touches secrets, you have a problem',
     painPoints: [
       {
-        title: 'Your keys live in your infrastructure',
+        title: 'Your secrets live in your infrastructure',
         description:
-          'Your private keys sit in .env files, databases, or memory on a server you manage. If that server is compromised \u2014 through a vulnerability, a misconfiguration, or a malicious insider \u2014 the keys are gone. There is no second chance. This isn\u2019t just about blockchain keys. The same risk applies to API keys, OAuth tokens, and any other credential your agent needs to do its job.',
+          'Your secrets sit in .env files, databases, or server memory. One breach \u2014 a vulnerability, a misconfiguration, an insider \u2014 and they\u2019re gone. This applies to private keys, API keys, OAuth tokens, and any credential your agent needs.',
       },
       {
         title: 'Your security logic can be bypassed',
         description:
-          'You write transfer limits, contract allowlists, and approval checks into your code. But that code runs on an ordinary server. Anyone with access to the server can modify the code, skip the checks, and call the signing function directly. Your security is only as strong as your deployment environment.',
+          'You write transfer limits, allowlists, and approval checks into your code. But that code runs on an ordinary server \u2014 anyone with access can modify it, skip the checks, and call signing directly. Your security is only as strong as your deployment environment.',
       },
       {
         title: 'You can\u2019t prove you won\u2019t cheat',
         description:
-          'Even if you would never misuse a user\u2019s keys, you have no way to prove it. In a traditional architecture, \u201Ctrust me\u201D is a promise, not a guarantee. Your users have no technical basis to verify that you \u2014 the operator \u2014 cannot access their assets.',
+          'Even if you would never misuse a user\u2019s secrets, you have no technical way to prove it. \u201CTrust me\u201D is a promise, not a guarantee.',
       },
     ],
   },
@@ -113,19 +112,19 @@ export const platformPageEn: PlatformPageContent = {
     title: 'Hardware-enforced trust, not promises',
     items: [
       {
-        title: 'Keys never leave the hardware boundary',
+        title: 'Secrets never leave the hardware boundary',
         description:
-          'Private keys are generated inside Trusted Execution Environments (TEEs) and never exported. The CPU enforces memory isolation \u2014 no external process, no operating system, no operator can read key material. Even if the server is fully compromised, the keys remain inaccessible.',
+          'Secrets are generated inside Trusted Execution Environments (TEEs) and never exported. The CPU enforces memory isolation \u2014 no external process, no OS, no operator can read them. Even if the server is fully compromised, the secrets stay inaccessible.',
       },
       {
         title: 'Code integrity guaranteed by hardware',
         description:
-          'Your application runs inside the TEE. The hardware guarantees that the code being executed is exactly the code that was verified \u2014 it cannot be modified, replaced, or bypassed at runtime. The security logic you write \u2014 limit checks, allowlists, approval requirements \u2014 runs with the same hardware-enforced integrity as the rest of your application.',
+          'Your application runs inside the TEE. The hardware guarantees the running code is exactly the code that was verified \u2014 it cannot be modified, replaced, or bypassed at runtime. The security logic you write runs with the same hardware-enforced integrity as the rest of your application.',
       },
       {
         title: 'Provably unable to cheat',
         description:
-          'TEENet combines hardware isolation (TEE) with threshold signatures (TSS) and multi-party computation (MPC) to shard keys across multiple independent nodes. No single party \u2014 including the operator \u2014 can reconstruct a complete key or execute a signature alone. \u201CWe can\u2019t access your secrets\u201D is not a policy. It is a cryptographic and hardware-enforced fact, verifiable through remote attestation.',
+          'TEENet combines hardware isolation (TEE) with threshold signatures (TSS) and multi-party computation (MPC) to shard keys across multiple independent nodes. No single party \u2014 including the operator \u2014 can reconstruct a key or sign alone. \u201CWe can\u2019t access your secrets\u201D becomes a hardware-enforced fact, verifiable through remote attestation.',
       },
     ],
   },
@@ -145,8 +144,8 @@ export const platformPageEn: PlatformPageContent = {
   whyPlatform: {
     title: 'Why a platform, not a toolkit',
     body: [
-      'You could spin up your own TEE instance with Intel TDX or AMD SEV. But going from a single enclave to a production system means solving hard problems on your own: key generation and storage inside the enclave, key sharding across multiple nodes, multi-party signing coordination, mutual attestation between nodes, and failover when nodes go down.',
-      'TEENet handles all of this so you can focus on your application. You get the security properties of a distributed TEE network \u2014 and the convenience of a managed service \u2014 without building one from scratch.',
+      'You could spin up your own TEE instance with Intel TDX or AMD SEV. But going from a single enclave to a production system means solving key sharding, multi-party signing, mutual attestation, and node failover on your own.',
+      'TEENet handles all of this so you can focus on your application \u2014 the security of a distributed TEE network with the convenience of a managed service.',
     ],
   },
 
@@ -211,9 +210,8 @@ export const platformPageZh: PlatformPageContent = {
   fromWallet: {
     title: '钱包只是其中一个例子',
     body: [
-      '你刚刚看到了一个钱包——AI Agent 可以在完全不接触私钥的情况下管理资产。支出限额由硬件强制执行。审批流程无法被任何后端绕过。密钥连运营方本身都无法访问。',
-      '这种安全模型并不只适用于钱包。任何由自主 Agent 处理敏感操作的应用——签署交易、管理密钥、执行规则——都面临同样的根本问题。',
-      '这个问题也远不止于区块链密钥。API key、OAuth token、数据库凭证——任何你的 Agent 需要用来与外部世界交互的秘密，都面临同样的风险：从 .env 文件泄露、在日志中暴露，或是被从被攻破的服务器中窃取。',
+      '你刚刚看到了一个钱包——AI Agent 在完全不接触私钥的情况下管理资产。支出限额由硬件强制执行。审批流程无法被任何后端绕过。',
+      '这种安全模型并不只适用于钱包——甚至不只适用于区块链密钥。任何你的 Agent 需要用来与外部世界交互的秘密（私钥、API key、OAuth token）都面临同样的风险。',
       'TEENet 就是让这一切成为可能的基础设施。',
     ],
   },
@@ -222,19 +220,19 @@ export const platformPageZh: PlatformPageContent = {
     title: '如果你的 Agent 接触秘密，你就有麻烦了',
     painPoints: [
       {
-        title: '你的密钥就在你自己的基础设施里',
+        title: '你的秘密就在你自己的基础设施里',
         description:
-          '你的私钥放在 .env 文件、数据库，或者你管理的某台服务器的内存中。一旦那台服务器被攻破——通过漏洞、配置错误或恶意内部人员——密钥就没了。没有第二次机会。而且这不仅仅是区块链密钥的问题。同样的风险也适用于 API key、OAuth token，以及你的 Agent 完成工作所需的任何其他凭证。',
+          '你的秘密放在 .env 文件、数据库，或者服务器的内存中。一次攻破——一个漏洞、一次配置失误、一个内部人员——它们就没了。这适用于私钥、API key、OAuth token，以及你的 Agent 需要的任何凭证。',
       },
       {
         title: '你的安全逻辑可以被绕过',
         description:
-          '你把转账限额、合约白名单和审批检查写在代码里。但这些代码运行在普通的服务器上。任何能访问这台服务器的人都可以修改代码、跳过检查，直接调用签名函数。你的安全性只取决于部署环境的牢靠程度。',
+          '你把转账限额、白名单和审批检查写在代码里。但这些代码运行在普通的服务器上——任何能访问这台服务器的人都可以修改代码、跳过检查，直接调用签名。你的安全性只取决于部署环境的牢靠程度。',
       },
       {
         title: '你无法证明自己不会作恶',
         description:
-          '即使你绝不会滥用用户的密钥，你也没有办法证明这一点。在传统架构中，"请相信我"只是承诺，而不是保证。你的用户没有任何技术手段可以验证作为运营方的你无法接触他们的资产。',
+          '即使你绝不会滥用用户的秘密，你也没有任何技术手段可以证明这一点。"请相信我"只是承诺，而不是保证。',
       },
     ],
   },
@@ -243,19 +241,19 @@ export const platformPageZh: PlatformPageContent = {
     title: '硬件强制的信任，而不是承诺',
     items: [
       {
-        title: '密钥永远不会离开硬件边界',
+        title: '秘密永远不会离开硬件边界',
         description:
-          '私钥在可信执行环境（TEE）内生成，永远不会被导出。CPU 强制执行内存隔离——任何外部进程、操作系统或运营方都无法读取密钥材料。即使服务器被完全攻破，密钥仍然无法被访问。',
+          '秘密在可信执行环境（TEE）内生成，永远不会被导出。CPU 强制执行内存隔离——任何外部进程、操作系统或运营方都无法读取它们。即使服务器被完全攻破，秘密仍然无法被访问。',
       },
       {
         title: '代码完整性由硬件保证',
         description:
-          '你的应用在 TEE 内运行。硬件保证正在执行的代码与经过验证的代码完全一致——运行时无法被修改、替换或绕过。你写下的安全逻辑——限额检查、白名单、审批要求——与应用的其余部分享有同等级别的硬件强制完整性。',
+          '你的应用在 TEE 内运行。硬件保证正在运行的代码与经过验证的代码完全一致——运行时无法被修改、替换或绕过。你写下的安全逻辑与应用的其余部分享有同等级别的硬件强制完整性。',
       },
       {
         title: '可证明无法作恶',
         description:
-          'TEENet 将硬件隔离（TEE）与门限签名（TSS）和多方安全计算（MPC）相结合，将密钥分片到多个独立节点上。没有任何单一方——包括运营方——能独自重建完整密钥或执行一次签名。"我们无法访问你的秘密"不是一条策略，而是一项密码学与硬件共同强制的事实，可通过远程证明进行验证。',
+          'TEENet 将硬件隔离（TEE）与门限签名（TSS）和多方安全计算（MPC）相结合，将密钥分片到多个独立节点上。没有任何单一方——包括运营方——能独自重建密钥或完成签名。"我们无法访问你的秘密"成为一项由硬件强制执行的事实，可通过远程证明进行验证。',
       },
     ],
   },
@@ -275,8 +273,8 @@ export const platformPageZh: PlatformPageContent = {
   whyPlatform: {
     title: '为什么是平台，而不是工具包',
     body: [
-      '你当然可以自己用 Intel TDX 或 AMD SEV 启动一个 TEE 实例。但从单个 enclave 走向生产系统意味着你要独自解决一堆难题：在 enclave 内生成和保管密钥、在多节点之间分片密钥、多方签名协调、节点之间的相互证明、以及节点故障时的切换。',
-      'TEENet 已经替你把这些全部处理好，让你能够专注在自己的应用上。你可以获得分布式 TEE 网络的安全特性——以及托管服务的便利——而无需从头构建。',
+      '你当然可以自己用 Intel TDX 或 AMD SEV 启动一个 TEE 实例。但从单个 enclave 走向生产系统，意味着你要独自解决密钥分片、多方签名、相互证明以及节点故障切换等难题。',
+      'TEENet 已经替你把这些全部处理好，让你能够专注在自己的应用上——分布式 TEE 网络的安全特性，以及托管服务的便利。',
     ],
   },
 
