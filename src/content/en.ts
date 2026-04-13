@@ -30,7 +30,7 @@ export const en: ContentData = {
     flowDiagram: {
       nodes: [
         { title: 'Agent acts', subtitle: 'Send 0.8 ETH' },
-        { title: 'Rules check', subtitle: 'Exceeds 0.1 ETH limit' },
+        { title: 'Rules check', subtitle: 'Exceeds 50 USD limit' },
         { title: 'You approve', subtitle: 'Passkey confirmed' },
       ],
     },

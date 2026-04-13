@@ -30,7 +30,7 @@ export const zh: ContentData = {
     flowDiagram: {
       nodes: [
         { title: 'Agent 发起操作', subtitle: '发送 0.8 ETH' },
-        { title: '规则检查', subtitle: '超过 0.1 ETH 限额' },
+        { title: '规则检查', subtitle: '超过 50 USD 限额' },
         { title: '你来确认', subtitle: 'Passkey 已验证' },
       ],
     },
