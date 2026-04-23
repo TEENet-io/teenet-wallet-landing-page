@@ -3,12 +3,12 @@ import { ContentData } from './types'
 export const zh: ContentData = {
   locale: 'zh',
   meta: {
-    title: '给 OpenClaw 的可信安全钱包 | TEENet OpenClaw Wallet',
-    description: '通过对话创建和使用链上钱包，为敏感操作设置规则，并通过 Passkey 完成授权，由 TEENet 提供可信执行能力。',
+    title: '面向 Agent 应用的可信钱包 | TEENet Wallet',
+    description: '通过对话创建和使用链上钱包，为敏感操作设置规则，并通过 Passkey 完成授权，由 TEENet 为 Agent 应用提供可信执行能力。',
     ogLocale: 'zh_CN',
   },
   header: {
-    brandName: 'TEENet OpenClaw Wallet',
+    brandName: 'TEENet Wallet',
     nav: [
       { label: '产品', href: '#product' },
       { label: '如何工作', href: '#how-it-works' },
@@ -20,13 +20,13 @@ export const zh: ContentData = {
     ctaSecondary: '查看 Demo',
   },
   hero: {
-    eyebrow: '面向开发者、创业者与 OpenClaw 用户',
+    eyebrow: '面向开发者、创业者与 Agent 应用团队',
     headline: '一个让你放心交给 Agent 的钱包',
     subheadline: '日常操作交给 Agent，重要的时候你来点头。',
     badges: ['开源', '你的规则，硬件级执行', 'Passkey 授权'],
     ctaPrimary: '加入 Beta',
     ctaSecondary: '观看演示',
-    tagline: '为 OpenClaw 而生，由 TEENet 提供安全保障。',
+    tagline: '为 Agent 应用而生，由 TEENet 提供安全保障。',
     flowDiagram: {
       nodes: [
         { title: 'Agent 发起操作', subtitle: '发送 0.8 ETH' },
@@ -96,7 +96,7 @@ export const zh: ContentData = {
   developers: {
     eyebrow: 'For developers and builders',
     title: '开源，随时可 fork。',
-    subtitle: '钱包应用和 Agent skills 完全开源。克隆、定制，或作为你自己 Agent 工作流的参考。',
+    subtitle: '钱包应用和 Agent skills 完全开源。克隆、定制，或作为你自己 Agent 应用的参考。',
     ctaPrimary: '前往 GitHub',
     ctaSecondary: '查看文档',
     points: [
@@ -108,7 +108,7 @@ export const zh: ContentData = {
   beyondWallet: {
     eyebrow: 'BEYOND THE WALLET',
     title: 'TEENet 是一个平台——不只是钱包的后端',
-    description: '这个钱包只是 TEENet 上的一个应用。平台提供硬件隔离运行时和托管密钥保管，适用于任何需要保护秘密和执行规则的应用——从 AI Agent 钱包到自动交易系统，再到跨链桥。',
+    description: '这个钱包只是 TEENet 上的一个应用。平台提供硬件隔离运行时和托管密钥保管，适用于任何需要保护秘密和执行规则的 Agent 应用——从 AI Agent 钱包到自动交易系统，再到跨链桥。',
     tags: ['硬件隔离运行时', '托管密钥保管', '硬件强制访问控制'],
     cta: '探索 TEENet 平台',
   },
@@ -139,7 +139,7 @@ export const zh: ContentData = {
       },
       {
         question: '这也是给开发者做的吗？',
-        answer: '是的。开发者和构建者可以在 GitHub 上查看钱包应用和 skills，并在此基础上扩展自己的 OpenClaw 流程。',
+        answer: '是的。开发者和构建者可以在 GitHub 上查看钱包应用和 skills，并在此基础上扩展自己的 Agent 应用。',
       },
       {
         question: '为什么这里的批准流程更值得信任？',
@@ -151,7 +151,7 @@ export const zh: ContentData = {
       },
       {
         question: '我可以在 TEENet 上构建自己的 Agent 应用吗？',
-        answer: '可以。TEENet 是一个通用平台，适用于需要硬件隔离执行、托管密钥保管和可配置审批策略的应用。钱包只是其中一个例子——你可以构建任何需要安全密钥管理和规则执行的 AI Agent 应用。从 github.com/TEENet-io/teenet-sdk 开始。',
+        answer: '可以。TEENet 是一个通用平台，适用于需要硬件隔离执行、托管密钥保管和可配置审批策略的 Agent 应用。钱包只是其中一个例子——你可以构建任何需要安全密钥管理和规则执行的 AI Agent 应用。从 github.com/TEENet-io/teenet-sdk 开始。',
       },
       {
         question: '我可以导出我的私钥吗？',
@@ -162,16 +162,16 @@ export const zh: ContentData = {
   },
   finalCTA: {
     title: '准备好试试看，或者直接开始构建了吗？',
-    subtitle: '让 OpenClaw agent 真正用上钱包，同时把控制感、安全确认和顺手的流程留在你手里。',
+    subtitle: '让你的 Agent 真正用上钱包，同时把控制感、安全确认和顺手的流程留在你手里。',
     ctaPrimary: '加入 Beta',
     ctaSecondary: '前往 GitHub',
     ctaTertiary: '观看演示',
     ctaPlatform: '探索 TEENet',
-    supporting: '为 OpenClaw 而生，在最关键的钱包控制环节提供保护。',
+    supporting: '为 Agent 应用而生，在最关键的钱包控制环节提供保护。',
   },
   footer: {
-    brandName: 'TEENet OpenClaw Wallet',
-    brandLine: '为 OpenClaw 而生，在最关键的钱包控制环节提供保护。',
+    brandName: 'TEENet Wallet',
+    brandLine: '为 Agent 应用而生，在最关键的钱包控制环节提供保护。',
     linkGroups: [
       {
         title: '产品',
@@ -198,7 +198,7 @@ export const zh: ContentData = {
         links: [
           { label: '观看演示', href: '#' },
           { label: '加入 Beta', href: '#' },
-          { label: 'OpenClaw', href: '#' },
+          { label: 'TEENet Wallet', href: '#' },
           { label: 'TEENet', href: 'https://github.com/TEENet-io' },
         ],
       },
@@ -211,7 +211,7 @@ export const zh: ContentData = {
         ],
       },
     ],
-    copyright: '\u00a9 2026 TEENet OpenClaw Wallet',
+    copyright: '\u00a9 2026 TEENet Wallet',
   },
   betaForm: {
     title: '申请试用',

@@ -3,12 +3,12 @@ import { ContentData } from './types'
 export const en: ContentData = {
   locale: 'en',
   meta: {
-    title: 'A Trusted Wallet for OpenClaw | TEENet OpenClaw Wallet',
-    description: 'Create and use on-chain wallets through chat, set rules for sensitive actions, and approve risk with Passkey — powered by TEENet trusted execution.',
+    title: 'A Trusted Wallet for Agentic Applications | TEENet Wallet',
+    description: 'Create and use on-chain wallets through chat, set rules for sensitive actions, and approve risk with Passkey — built for agentic applications and secured by TEENet trusted execution.',
     ogLocale: 'en_US',
   },
   header: {
-    brandName: 'TEENet OpenClaw Wallet',
+    brandName: 'TEENet Wallet',
     nav: [
       { label: 'Product', href: '#product' },
       { label: 'How It Works', href: '#how-it-works' },
@@ -20,13 +20,13 @@ export const en: ContentData = {
     ctaSecondary: 'Watch Demo',
   },
   hero: {
-    eyebrow: 'For developers, builders, and OpenClaw users',
+    eyebrow: 'For developers, builders, and teams shipping agentic applications',
     headline: 'A Wallet Your Agent Can Use\nWithout Putting Your Assets at Risk',
     subheadline: 'Let your agent act. Keep approval for what matters.',
     badges: ['Open source', 'Your rules, enforced by hardware', 'Passkey approval'],
     ctaPrimary: 'Join Beta',
     ctaSecondary: 'Watch Demo',
-    tagline: 'Built for OpenClaw. Secured by TEENet.',
+    tagline: 'Built for agentic applications. Secured by TEENet.',
     flowDiagram: {
       nodes: [
         { title: 'Agent acts', subtitle: 'Send 0.8 ETH' },
@@ -96,7 +96,7 @@ export const en: ContentData = {
   developers: {
     eyebrow: 'For developers and builders',
     title: 'Open source. Ready to fork.',
-    subtitle: 'The wallet app and agent skills are fully open source. Clone it, customize it, or use it as a reference for your own agent workflow.',
+    subtitle: 'The wallet app and agent skills are fully open source. Clone it, customize it, or use it as a reference for your own agentic application.',
     ctaPrimary: 'View on GitHub',
     ctaSecondary: 'Read the docs',
     points: [
@@ -108,7 +108,7 @@ export const en: ContentData = {
   beyondWallet: {
     eyebrow: 'BEYOND THE WALLET',
     title: 'TEENet is a platform — not just a wallet backend',
-    description: 'This wallet is one application built on TEENet. The platform provides a hardware-isolated runtime and managed key custody for any application that needs to protect secrets and enforce rules — from AI agent wallets to autonomous trading systems to cross-chain bridges.',
+    description: 'This wallet is one application built on TEENet. The platform provides a hardware-isolated runtime and managed key custody for agentic applications that need to protect secrets and enforce rules — from AI agent wallets to autonomous trading systems to cross-chain bridges.',
     tags: ['Hardware-isolated runtime', 'Managed key custody', 'Hardware-enforced access control'],
     cta: 'Explore TEENet Platform',
   },
@@ -139,7 +139,7 @@ export const en: ContentData = {
       },
       {
         question: 'Is this built for developers too?',
-        answer: 'Yes. Developers and builders can explore the wallet app and skills on GitHub, then adapt the flow for their own OpenClaw experiences.',
+        answer: 'Yes. Developers and builders can explore the wallet app and skills on GitHub, then adapt the flow for their own agentic applications.',
       },
       {
         question: 'Why is approval more trustworthy here?',
@@ -151,7 +151,7 @@ export const en: ContentData = {
       },
       {
         question: 'Can I build my own agent app on TEENet?',
-        answer: 'Yes. TEENet is a general-purpose platform for applications that need hardware-isolated execution, managed key custody, and configurable approval policies. The wallet is one example — you can build any AI agent application that needs secure key management and rule enforcement. Start with the SDK at github.com/TEENet-io/teenet-sdk.',
+        answer: 'Yes. TEENet is a general-purpose platform for agentic applications that need hardware-isolated execution, managed key custody, and configurable approval policies. The wallet is one example — you can build any AI agent application that needs secure key management and rule enforcement. Start with the SDK at github.com/TEENet-io/teenet-sdk.',
       },
       {
         question: 'Can I export my private keys?',
@@ -162,16 +162,16 @@ export const en: ContentData = {
   },
   finalCTA: {
     title: 'Ready to try it — or build with it?',
-    subtitle: 'Use your OpenClaw agent with more control, safer approvals, and a wallet flow built for real use.',
+    subtitle: 'Give your agent a wallet with more control, safer approvals, and a flow built for real use.',
     ctaPrimary: 'Join Beta',
     ctaSecondary: 'View on GitHub',
     ctaTertiary: 'Watch Demo',
     ctaPlatform: 'Explore TEENet',
-    supporting: 'Built for OpenClaw. Protected where wallet control matters most.',
+    supporting: 'Built for agentic applications. Protected where wallet control matters most.',
   },
   footer: {
-    brandName: 'TEENet OpenClaw Wallet',
-    brandLine: 'Built for OpenClaw. Protected where wallet control matters most.',
+    brandName: 'TEENet Wallet',
+    brandLine: 'Built for agentic applications. Protected where wallet control matters most.',
     linkGroups: [
       {
         title: 'Product',
@@ -198,7 +198,7 @@ export const en: ContentData = {
         links: [
           { label: 'Watch Demo', href: '#' },
           { label: 'Join Beta', href: '#' },
-          { label: 'OpenClaw', href: '#' },
+          { label: 'TEENet Wallet', href: '#' },
           { label: 'TEENet', href: 'https://github.com/TEENet-io' },
         ],
       },
@@ -211,7 +211,7 @@ export const en: ContentData = {
         ],
       },
     ],
-    copyright: '\u00a9 2026 TEENet OpenClaw Wallet',
+    copyright: '\u00a9 2026 TEENet Wallet',
   },
   betaForm: {
     title: 'Join the Beta',

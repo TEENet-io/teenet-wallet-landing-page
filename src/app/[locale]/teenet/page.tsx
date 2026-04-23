@@ -65,7 +65,7 @@ export default async function TeenetPage({
 
           {/* 3-Layer Relationship Diagram */}
           <div className="mt-12 max-w-lg mx-auto">
-            {/* Layer 1 — OpenClaw */}
+            {/* Layer 1 — Agent */}
             <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
@@ -74,11 +74,11 @@ export default async function TeenetPage({
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm">{content.intro.diagramLayers.openclaw.title}</p>
-                  <p className="text-xs text-gray-500">{content.intro.diagramLayers.openclaw.label}</p>
+                  <p className="font-semibold text-gray-900 text-sm">{content.intro.diagramLayers.agent.title}</p>
+                  <p className="text-xs text-gray-500">{content.intro.diagramLayers.agent.label}</p>
                 </div>
               </div>
-              <p className="text-sm text-gray-600 pl-11">{content.intro.diagramLayers.openclaw.description}</p>
+              <p className="text-sm text-gray-600 pl-11">{content.intro.diagramLayers.agent.description}</p>
             </div>
 
             {/* Arrow down */}

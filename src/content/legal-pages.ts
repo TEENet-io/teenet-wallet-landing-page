@@ -18,8 +18,8 @@ export interface LegalPageContent {
 
 export const privacyPageEn: LegalPageContent = {
   meta: {
-    title: 'Privacy Policy | TEENet OpenClaw Wallet',
-    description: 'How TEENet OpenClaw Wallet handles your data — what we collect, what we don\'t, and how your keys are protected.',
+    title: 'Privacy Policy | TEENet Wallet',
+    description: 'How TEENet Wallet handles your data — what we collect, what we don\'t, and how your keys are protected.',
   },
   backLink: '← Back to Home',
   title: 'Privacy Policy',
@@ -28,7 +28,7 @@ export const privacyPageEn: LegalPageContent = {
     {
       heading: '1. Who We Are',
       paragraphs: [
-        'TEENet OpenClaw Wallet ("the Wallet") is operated by TEENet Technology (Hong Kong) Limited, registered in Hong Kong. This policy describes how we handle your data when you use the Wallet.',
+        'TEENet Wallet ("the Wallet") is operated by TEENet Technology (Hong Kong) Limited, registered in Hong Kong. This policy describes how we handle your data when you use the Wallet.',
         'Contact: contact@teenet.io',
       ],
     },
@@ -109,8 +109,8 @@ export const privacyPageEn: LegalPageContent = {
 
 export const privacyPageZh: LegalPageContent = {
   meta: {
-    title: '隐私政策 | TEENet OpenClaw Wallet',
-    description: 'TEENet OpenClaw Wallet 如何处理你的数据——我们收集什么、不收集什么，以及你的密钥如何受到保护。',
+    title: '隐私政策 | TEENet Wallet',
+    description: 'TEENet Wallet 如何处理你的数据——我们收集什么、不收集什么，以及你的密钥如何受到保护。',
   },
   backLink: '← 返回首页',
   title: '隐私政策',
@@ -119,7 +119,7 @@ export const privacyPageZh: LegalPageContent = {
     {
       heading: '1. 我们是谁',
       paragraphs: [
-        'TEENet OpenClaw Wallet（"本钱包"）由 TEENet Technology (Hong Kong) Limited 运营，该公司在香港注册。本政策描述了我们在您使用本钱包时如何处理您的数据。',
+        'TEENet Wallet（"本钱包"）由 TEENet Technology (Hong Kong) Limited 运营，该公司在香港注册。本政策描述了我们在您使用本钱包时如何处理您的数据。',
         '联系方式：contact@teenet.io',
       ],
     },
@@ -202,8 +202,8 @@ export const privacyPageZh: LegalPageContent = {
 
 export const termsPageEn: LegalPageContent = {
   meta: {
-    title: 'Terms of Service | TEENet OpenClaw Wallet',
-    description: 'Terms of Service for TEENet OpenClaw Wallet — Beta status, key custody, user responsibilities, and governing law.',
+    title: 'Terms of Service | TEENet Wallet',
+    description: 'Terms of Service for TEENet Wallet — Beta status, key custody, user responsibilities, and governing law.',
   },
   backLink: '← Back to Home',
   title: 'Terms of Service',
@@ -212,7 +212,7 @@ export const termsPageEn: LegalPageContent = {
     {
       heading: '1. Acceptance',
       paragraphs: [
-        'By using TEENet OpenClaw Wallet ("the Wallet"), you agree to these Terms. If you do not agree, do not use the Wallet.',
+        'By using TEENet Wallet ("the Wallet"), you agree to these Terms. If you do not agree, do not use the Wallet.',
       ],
     },
     {
@@ -312,8 +312,8 @@ export const termsPageEn: LegalPageContent = {
 
 export const termsPageZh: LegalPageContent = {
   meta: {
-    title: '服务条款 | TEENet OpenClaw Wallet',
-    description: 'TEENet OpenClaw Wallet 服务条款——Beta 状态、密钥托管、用户责任和适用法律。',
+    title: '服务条款 | TEENet Wallet',
+    description: 'TEENet Wallet 服务条款——Beta 状态、密钥托管、用户责任和适用法律。',
   },
   backLink: '← 返回首页',
   title: '服务条款',
@@ -322,7 +322,7 @@ export const termsPageZh: LegalPageContent = {
     {
       heading: '1. 接受条款',
       paragraphs: [
-        '使用 TEENet OpenClaw Wallet（"本钱包"）即表示您同意本条款。如果您不同意，请勿使用本钱包。',
+        '使用 TEENet Wallet（"本钱包"）即表示您同意本条款。如果您不同意，请勿使用本钱包。',
       ],
     },
     {

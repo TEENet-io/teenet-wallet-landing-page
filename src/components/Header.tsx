@@ -98,7 +98,7 @@ export default function Header({ content, locale, onBetaClick }: HeaderProps) {
           <div className="flex items-center gap-2.5 shrink-0">
             <Image
               src={overHero ? '/teenet-wallet-logo-nav-dark.svg' : '/teenet-wallet-logo-nav-light.svg'}
-              alt="TEENet OpenClaw Wallet"
+              alt="TEENet Wallet"
               width={28}
               height={28}
             />

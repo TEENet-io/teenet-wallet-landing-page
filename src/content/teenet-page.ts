@@ -15,7 +15,7 @@ export interface TeenetPageContent {
     supporting: string
     introParagraph: string
     diagramLayers: {
-      openclaw: { title: string; label: string; description: string }
+      agent: { title: string; label: string; description: string }
       walletApp: { title: string; label: string; description: string; tag: string }
       teenet: { title: string; label: string; description: string; highlights: [string, string] }
     }
@@ -64,20 +64,20 @@ export interface TeenetPageContent {
 
 export const teenetPageEn: TeenetPageContent = {
   meta: {
-    title: 'TEENet Trust and Security | TEENet OpenClaw Wallet',
+    title: 'TEENet Trust and Security | TEENet Wallet',
     description: 'How TEENet protects your wallet with hardware-isolated execution, sharded key custody, and remote attestation.',
   },
   title: 'TEENet Trust and Security',
   backLink: '← Back to Home',
   intro: {
     headline: 'What the app does — and what TEENet does',
-    supporting: 'OpenClaw can ask. The wallet app can prepare. TEENet verifies approvals and protects keys underneath.',
-    introParagraph: 'Most wallet apps check approval inside the app itself. TEENet OpenClaw Wallet works differently: the app can ask, but approval is verified by a protected control layer underneath.',
+    supporting: 'Your agent can ask. The wallet app can prepare. TEENet verifies approvals and protects keys underneath.',
+    introParagraph: 'Most wallet apps check approval inside the app itself. TEENet Wallet works differently: the app can ask, but approval is verified by a protected control layer underneath.',
     diagramLayers: {
-      openclaw: {
-        title: 'OpenClaw',
+      agent: {
+        title: 'Your Agent',
         label: 'Starts the request',
-        description: 'The agent asks to perform an action.',
+        description: 'An agent asks to perform an action.',
       },
       walletApp: {
         title: 'Wallet App',
@@ -128,7 +128,7 @@ export const teenetPageEn: TeenetPageContent = {
     },
   },
   concerns: {
-    title: 'What This Means for OpenClaw Wallet Users',
+    title: 'What This Means for Wallet Users',
     headers: ['Concern', 'How TEENet Addresses It'],
     items: [
       { concern: 'Can my agent bypass approval rules?', answer: 'No. Rules are enforced inside the TEE. The agent cannot modify or skip them.' },
@@ -140,7 +140,7 @@ export const teenetPageEn: TeenetPageContent = {
   },
   architecture: {
     title: 'Architecture Overview',
-    userBox: ['User (OpenClaw)', 'Chat → Action → Approval (Passkey)'],
+    userBox: ['User', 'Chat → Action → Approval (Passkey)'],
     runtimeLabel: 'TEE Trusted Runtime',
     policyBox: ['Wallet APP', 'Rules, Thresholds,', 'Contract Allowlists'],
     custodyBox: ['Key Management Service', '(t-of-k threshold)', 'MPC/TSS sharded keys'],
@@ -154,23 +154,23 @@ export const teenetPageEn: TeenetPageContent = {
       { bold: 'Passkey beats multisig.', body: "Multisig means on-chain transactions, gas fees, and clunky coordination. TEENet replaces all of that with Passkey — biometric approval in seconds, off-chain inside the TEE, with zero gas cost." },
     ],
   },
-  disclaimer: 'TEENet runtime is not open source. The application integration layer for OpenClaw is open. This page describes the trust and security properties of the TEENet platform as used by TEENet OpenClaw Wallet.',
+  disclaimer: 'TEENet runtime is not open source. The wallet application integration layer is open. This page describes the trust and security properties of the TEENet platform as used by TEENet Wallet.',
 }
 
 export const teenetPageZh: TeenetPageContent = {
   meta: {
-    title: 'TEENet 信任与安全 | TEENet OpenClaw Wallet',
+    title: 'TEENet 信任与安全 | TEENet Wallet',
     description: 'TEENet 如何通过硬件隔离执行、分片密钥托管和远程证明保护你的钱包。',
   },
   title: 'TEENet 信任与安全',
   backLink: '← 返回首页',
   intro: {
     headline: 'App 做什么，TEENet 做什么',
-    supporting: 'OpenClaw 发起请求，Wallet App 承接流程，TEENet 在底层完成批准验证和密钥保护。',
-    introParagraph: '很多钱包应用是在 App 里完成批准检查的。TEENet OpenClaw Wallet 不一样：App 可以发起请求，但真正的批准验证是在它下面的受保护控制层里完成的。',
+    supporting: '你的 Agent 发起请求，Wallet App 承接流程，TEENet 在底层完成批准验证和密钥保护。',
+    introParagraph: '很多钱包应用是在 App 里完成批准检查的。TEENet Wallet 不一样：App 可以发起请求，但真正的批准验证是在它下面的受保护控制层里完成的。',
     diagramLayers: {
-      openclaw: {
-        title: 'OpenClaw',
+      agent: {
+        title: '你的 Agent',
         label: '发起请求',
         description: 'Agent 请求执行一个操作。',
       },
@@ -223,7 +223,7 @@ export const teenetPageZh: TeenetPageContent = {
     },
   },
   concerns: {
-    title: '这对 OpenClaw 钱包用户意味着什么',
+    title: '这对钱包用户意味着什么',
     headers: ['关注点', 'TEENet 的应对方式'],
     items: [
       { concern: '我的 Agent 能绕过审批规则吗？', answer: '不能。规则在 TEE 内执行。Agent 无法修改或跳过它们。' },
@@ -235,7 +235,7 @@ export const teenetPageZh: TeenetPageContent = {
   },
   architecture: {
     title: '架构概览',
-    userBox: ['用户 (OpenClaw)', '对话 → 操作 → 授权 (Passkey)'],
+    userBox: ['用户', '对话 → 操作 → 授权 (Passkey)'],
     runtimeLabel: 'TEE 可信运行时',
     policyBox: ['策略引擎', '规则、阈值、', '合约白名单'],
     custodyBox: ['密钥托管服务', '(t-of-k 门限)', 'MPC/TSS 分片密钥'],
@@ -249,7 +249,7 @@ export const teenetPageZh: TeenetPageContent = {
       { bold: 'Passkey 胜过多签。', body: '多签意味着链上交易、Gas 费和繁琐的步骤。TEENet 用 Passkey 取代了这一切——生物识别秒级授权，在 TEE 内链下完成，零 Gas 成本。' },
     ],
   },
-  disclaimer: 'TEENet 运行时不开源。面向 OpenClaw 的应用集成层是开放的。本页面描述 TEENet OpenClaw Wallet 所使用的 TEENet 平台的信任与安全特性。',
+  disclaimer: 'TEENet 运行时不开源。钱包应用集成层是开放的。本页面描述 TEENet Wallet 所使用的 TEENet 平台的信任与安全特性。',
 }
 
 export function getTeenetPageContent(locale: string): TeenetPageContent {

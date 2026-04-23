@@ -67,9 +67,9 @@ export interface PlatformPageContent {
 
 export const platformPageEn: PlatformPageContent = {
   meta: {
-    title: 'TEENet Platform | TEENet OpenClaw Wallet',
+    title: 'TEENet Platform | TEENet Wallet',
     description:
-      'The infrastructure behind the TEENet OpenClaw Wallet. Hardware-enforced trust for any application where autonomous agents handle keys, signing, and sensitive operations.',
+      'The infrastructure behind TEENet Wallet. Hardware-enforced trust for agentic applications that handle keys, signing, and sensitive operations.',
   },
   backLink: '← Back to Home',
   title: 'TEENet Platform',
@@ -128,7 +128,7 @@ export const platformPageEn: PlatformPageContent = {
   diagram: {
     platformLabel: 'TEENet Platform',
     appLabel: 'Your application',
-    appSublabel: 'wallet, agent, oracle',
+    appSublabel: 'wallet, agentic app, oracle',
     sdkLabel: 'SDK',
     custodyLabel: 'Key Custody',
     custodyCapabilities: ['generation', 'storage', 'signing', 'access control'],
@@ -153,9 +153,9 @@ export const platformPageEn: PlatformPageContent = {
       {
         title: 'Explore the open-source wallet',
         description:
-          'The TEENet OpenClaw Wallet is fully open source. Clone it, run it, read the code \u2014 no application needed.',
+          'TEENet Wallet is fully open source. Clone it, run it, read the code \u2014 no application needed.',
         links: [
-          { label: 'OpenClaw Wallet on GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
+          { label: 'Wallet on GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
           { label: 'Wallet Documentation', href: 'https://teenet-io.github.io/teenet-wallet/' },
         ],
       },
@@ -184,9 +184,9 @@ export const platformPageEn: PlatformPageContent = {
 
 export const platformPageZh: PlatformPageContent = {
   meta: {
-    title: 'TEENet 平台 | TEENet OpenClaw Wallet',
+    title: 'TEENet 平台 | TEENet Wallet',
     description:
-      'TEENet OpenClaw Wallet 背后的基础设施。为任何需要由自主 Agent 处理密钥、签名和敏感操作的应用提供硬件强制的信任。',
+      'TEENet Wallet 背后的基础设施。为处理密钥、签名和敏感操作的 Agent 应用提供硬件强制的信任。',
   },
   backLink: '← 返回首页',
   title: 'TEENet 平台',
@@ -245,7 +245,7 @@ export const platformPageZh: PlatformPageContent = {
   diagram: {
     platformLabel: 'TEENet 平台',
     appLabel: '你的应用',
-    appSublabel: '钱包、Agent、预言机',
+    appSublabel: '钱包、Agent 应用、预言机',
     sdkLabel: 'SDK',
     custodyLabel: '密钥托管',
     custodyCapabilities: ['生成', '存储', '签名', '访问控制'],
@@ -270,9 +270,9 @@ export const platformPageZh: PlatformPageContent = {
       {
         title: '探索开源钱包',
         description:
-          'TEENet OpenClaw Wallet 完全开源。克隆、运行、阅读代码——无需申请。',
+          'TEENet Wallet 完全开源。克隆、运行、阅读代码——无需申请。',
         links: [
-          { label: 'OpenClaw Wallet (GitHub)', href: 'https://github.com/TEENet-io/teenet-wallet' },
+          { label: '钱包 (GitHub)', href: 'https://github.com/TEENet-io/teenet-wallet' },
           { label: '钱包文档', href: 'https://teenet-io.github.io/teenet-wallet/' },
         ],
       },

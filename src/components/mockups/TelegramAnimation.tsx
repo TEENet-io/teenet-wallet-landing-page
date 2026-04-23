@@ -48,7 +48,7 @@ export default function TelegramAnimation({ elapsed, isGap }: TelegramAnimationP
           </svg>
         </div>
         <div className="flex-1 min-w-0">
-          <div className="text-white text-sm font-medium leading-tight">OpenClaw Wallet</div>
+          <div className="text-white text-sm font-medium leading-tight">TEENet Wallet</div>
           <div className="text-gray-400 text-xs leading-tight">Agent</div>
         </div>
         <div className="flex gap-1">

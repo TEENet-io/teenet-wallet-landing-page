@@ -12,7 +12,7 @@ export default function ChatMockup() {
           <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
           <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
         </div>
-        <span className="ml-2 text-xs font-medium text-gray-500">OpenClaw Agent</span>
+        <span className="ml-2 text-xs font-medium text-gray-500">Wallet Agent</span>
       </div>
 
       {/* Messages */}

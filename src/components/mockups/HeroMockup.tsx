@@ -28,7 +28,7 @@ export default function HeroMockup() {
         {/* Header */}
         <div className="flex items-center gap-2 border-b border-slate-700 px-4 py-2.5">
           <div className="h-2 w-2 rounded-full bg-emerald-400" />
-          <span className="text-xs font-medium text-slate-300">OpenClaw Agent</span>
+          <span className="text-xs font-medium text-slate-300">Wallet Agent</span>
         </div>
 
         {/* Messages */}

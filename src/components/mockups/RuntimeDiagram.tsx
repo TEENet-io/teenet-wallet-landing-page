@@ -28,7 +28,7 @@ export default function RuntimeDiagram() {
   return (
     <div
       role="img"
-      aria-label="Diagram showing execution boundary between OpenClaw agent and TEENet Trusted Runtime"
+      aria-label="Diagram showing execution boundary between an agent and the TEENet Trusted Runtime"
       className="w-full max-w-md"
     >
       {/* Outer dashed box — Your Agent */}
@@ -49,7 +49,7 @@ export default function RuntimeDiagram() {
             />
           </svg>
           <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
-            Your Agent (OpenClaw)
+            Your Agent
           </span>
         </div>
 
