@@ -4,7 +4,7 @@ export const zh: ContentData = {
   locale: 'zh',
   meta: {
     title: '面向 Agent 应用的可信钱包 | TEENet Wallet',
-    description: '通过对话创建和使用链上钱包，为敏感操作设置规则，并通过 Passkey 完成授权，由 TEENet 为 Agent 应用提供可信执行能力。',
+    description: '面向 Agent 应用的开源 Alpha 钱包，当前仅开放开发者在测试网上试用，并由 TEENet 提供硬件级规则执行与 Passkey 授权。',
     ogLocale: 'zh_CN',
   },
   header: {
@@ -16,21 +16,21 @@ export const zh: ContentData = {
       { label: '开发者', href: '#developers' },
       { label: '常见问题', href: '#faq' },
     ],
-    ctaPrimary: '申请试用',
+    ctaPrimary: '申请 Alpha 试用',
     ctaSecondary: '查看 Demo',
   },
   hero: {
     eyebrow: '面向开发者、创业者与 Agent 应用团队',
     headline: '一个让你放心交给 Agent 的钱包',
-    subheadline: '日常操作交给 Agent，重要的时候你来点头。',
-    badges: ['开源', '你的规则，硬件级执行', 'Passkey 授权'],
-    ctaPrimary: '加入 Beta',
+    subheadline: '让 Agent 动起来，把关键批准留给你。当前为开源 Alpha，仅开放开发者在测试网上试用。',
+    badges: ['开源', 'Alpha', '仅限测试网', '你的规则，硬件级执行'],
+    ctaPrimary: '申请 Alpha 试用',
     ctaSecondary: '观看演示',
-    tagline: '为 Agent 应用而生，由 TEENet 提供安全保障。',
+    tagline: '开源 Alpha，当前仅开放开发者在测试网上试用。',
     flowDiagram: {
       nodes: [
-        { title: 'Agent 发起操作', subtitle: '发送 0.8 ETH' },
-        { title: '规则检查', subtitle: '超过 50 USD 限额' },
+        { title: 'Agent 发起操作', subtitle: '发送 0.8 tETH' },
+        { title: '规则检查', subtitle: '超过 0.1 tETH 限额' },
         { title: '你来确认', subtitle: 'Passkey 已验证' },
       ],
     },
@@ -38,7 +38,7 @@ export const zh: ContentData = {
   whyThisMatters: {
     transition: '当你的 Agent 有了钱包，会发生什么',
     title: '为什么你会真的想用这个钱包',
-    subtitle: '日常操作交给 Agent，重要的事你来把关。下面就是它实际的样子。',
+    subtitle: '日常操作交给 Agent，重要的事你来把关。下面是它在当前 Alpha 里的实际样子。',
     cards: [
       { title: '让 Agent 真正帮你做事', description: '查余额、转账、查看最近交易——日常钱包操作交给 Agent，你不用亲自动手。' },
       { title: '该管住的，始终管得住', description: '设定转账限额、限制 Agent 可以交互的合约、要求规则变更需审批——一切由你配置。' },
@@ -52,8 +52,8 @@ export const zh: ContentData = {
   },
   howItWorks: {
     eyebrow: 'How it works',
-    title: '一笔真实交易，从头到尾',
-    subtitle: 'Agent 准备一笔转账，钱包对照你的规则检查，你用 Passkey 确认。',
+    title: '一笔测试网交易，从头到尾',
+    subtitle: 'Agent 准备一笔测试网转账，钱包对照你的规则检查，你用 Passkey 确认。',
     steps: [
       {
         title: '你说，Agent 来准备',
@@ -96,7 +96,7 @@ export const zh: ContentData = {
   developers: {
     eyebrow: 'For developers and builders',
     title: '开源，随时可 fork。',
-    subtitle: '钱包应用和 Agent skills 完全开源。克隆、定制，或作为你自己 Agent 应用的参考。',
+    subtitle: '钱包应用和 Agent skills 完全开源。你可以直接研究当前的 Alpha 实现、继续定制，或作为你自己 Agent 应用的参考。',
     ctaPrimary: '前往 GitHub',
     ctaSecondary: '查看文档',
     points: [
@@ -147,7 +147,7 @@ export const zh: ContentData = {
       },
       {
         question: '我该怎么开始？',
-        answer: '你可以先申请 Beta、观看演示，或者直接去 GitHub 看实现并开始构建。',
+        answer: '你可以先申请 Alpha 测试网试用、观看演示，或者直接去 GitHub 看实现并开始构建。',
       },
       {
         question: '我可以在 TEENet 上构建自己的 Agent 应用吗？',
@@ -155,23 +155,23 @@ export const zh: ContentData = {
       },
       {
         question: '我可以导出我的私钥吗？',
-        answer: '不可以。在 Beta 期间，私钥完全在硬件保护的环境内生成和存储，无法导出。这是一项保护您资产的安全决策，在平台成熟的过程中确保您的密钥永远不会暴露给软件或运营方。您的链上资产始终属于您：您可以随时将它们转移到任何外部钱包。随着平台的发展，我们将根据社区反馈和安全评估重新审视此政策。',
+        answer: '当前 Alpha 阶段不可以。钱包密钥完全在硬件保护的环境内生成和存储，无法导出。当前 Alpha 仅开放开发者在测试网上试用，还不支持主网资产。随着平台的发展，我们将根据社区反馈和安全评估重新审视此政策。',
       },
     ],
     ctaBridge: '准备好试试看，或者直接开始构建了吗？',
   },
   finalCTA: {
-    title: '准备好试试看，或者直接开始构建了吗？',
+    title: '准备好体验 Alpha，或者直接开始构建了吗？',
     subtitle: '让你的 Agent 真正用上钱包，同时把控制感、安全确认和顺手的流程留在你手里。',
-    ctaPrimary: '加入 Beta',
+    ctaPrimary: '申请 Alpha 试用',
     ctaSecondary: '前往 GitHub',
     ctaTertiary: '观看演示',
     ctaPlatform: '探索 TEENet',
-    supporting: '为 Agent 应用而生，在最关键的钱包控制环节提供保护。',
+    supporting: '开源 Alpha，当前仅开放开发者在测试网上试用。',
   },
   footer: {
     brandName: 'TEENet Wallet',
-    brandLine: '为 Agent 应用而生，在最关键的钱包控制环节提供保护。',
+    brandLine: '面向 Agent 应用的开源 Alpha，当前仅限测试网。',
     linkGroups: [
       {
         title: '产品',
@@ -189,7 +189,7 @@ export const zh: ContentData = {
           { label: '文档', href: '#' },
           { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
           { label: 'TEENet Platform', href: '/zh/platform' },
-          { label: 'Developer Preview', href: '#developers' },
+          { label: '早期访问', href: '#developers' },
           { label: '联系我们', href: 'mailto:contact@teenet.io' },
         ],
       },
@@ -197,7 +197,7 @@ export const zh: ContentData = {
         title: '资源',
         links: [
           { label: '观看演示', href: '#' },
-          { label: '加入 Beta', href: '#' },
+          { label: '申请 Alpha 试用', href: '#' },
           { label: 'TEENet Wallet', href: '#' },
           { label: 'TEENet', href: 'https://github.com/TEENet-io' },
         ],
@@ -214,10 +214,10 @@ export const zh: ContentData = {
     copyright: '\u00a9 2026 TEENet Wallet',
   },
   betaForm: {
-    title: '申请试用',
+    title: '申请 Alpha 试用',
     placeholder: '请输入邮箱地址',
     submit: '提交',
-    success: '感谢！我们会尽快联系您。',
+    success: '感谢！我们会就 Alpha 试用尽快联系您。',
     error: '请输入有效的邮箱地址。',
     close: '关闭',
   },

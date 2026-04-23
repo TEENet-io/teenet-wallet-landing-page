@@ -77,7 +77,7 @@ export const platformPageEn: PlatformPageContent = {
   fromWallet: {
     title: 'The wallet was just one example',
     body: [
-      'You just saw a wallet where an AI agent manages assets without ever touching a private key. Spending limits enforced by hardware. Approval flows no backend can bypass.',
+      'You just saw an alpha wallet where an AI agent manages testnet assets without ever touching a private key. Spending limits enforced by hardware. Approval flows no backend can bypass.',
       'That security model isn\u2019t specific to wallets \u2014 or even to blockchain keys. Any secret your agent needs to act on the world (private keys, API keys, OAuth tokens) faces the same risks.',
       'TEENet is the infrastructure that makes it possible.',
     ],
@@ -148,12 +148,12 @@ export const platformPageEn: PlatformPageContent = {
   getStarted: {
     title: 'Get started',
     description:
-      'TEENet is currently in Developer Preview. We\u2019re working with a select group of developers to refine the platform and SDK.',
+      'Platform access is still early. We\u2019re working with a small group of developers to shape the platform and SDK.',
     paths: [
       {
         title: 'Explore the open-source wallet',
         description:
-          'TEENet Wallet is fully open source. Clone it, run it, read the code \u2014 no application needed.',
+          'TEENet Wallet is fully open source and currently available as an alpha for developer trials on testnet.',
         links: [
           { label: 'Wallet on GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
           { label: 'Wallet Documentation', href: 'https://teenet-io.github.io/teenet-wallet/' },
@@ -172,7 +172,7 @@ export const platformPageEn: PlatformPageContent = {
 
   contact: {
     title: 'Get in touch',
-    body: ['Have questions about the platform, the SDK, or the Developer Preview?'],
+    body: ['Have questions about the platform, the SDK, or early access?'],
     email: 'contact@teenet.io',
     followLabel: 'Follow our progress:',
     socialLinks: [
@@ -194,7 +194,7 @@ export const platformPageZh: PlatformPageContent = {
   fromWallet: {
     title: '钱包只是其中一个例子',
     body: [
-      '你刚刚看到了一个钱包——AI Agent 在完全不接触私钥的情况下管理资产。支出限额由硬件强制执行。审批流程无法被任何后端绕过。',
+      '你刚刚看到的是一个 Alpha 钱包——AI Agent 在完全不接触私钥的情况下管理测试网资产。支出限额由硬件强制执行。审批流程无法被任何后端绕过。',
       '这种安全模型并不只适用于钱包——甚至不只适用于区块链密钥。任何你的 Agent 需要用来与外部世界交互的秘密（私钥、API key、OAuth token）都面临同样的风险。',
       'TEENet 就是让这一切成为可能的基础设施。',
     ],
@@ -265,12 +265,12 @@ export const platformPageZh: PlatformPageContent = {
   getStarted: {
     title: '开始使用',
     description:
-      'TEENet 目前处于 Developer Preview 阶段。我们正在与一批精选开发者合作，打磨平台和 SDK。',
+      '平台访问目前仍处于很早期的阶段。我们正与一小批开发者一起打磨平台和 SDK。',
     paths: [
       {
         title: '探索开源钱包',
         description:
-          'TEENet Wallet 完全开源。克隆、运行、阅读代码——无需申请。',
+          'TEENet Wallet 完全开源，当前以 Alpha 形式开放给开发者在测试网上试用。',
         links: [
           { label: '钱包 (GitHub)', href: 'https://github.com/TEENet-io/teenet-wallet' },
           { label: '钱包文档', href: 'https://teenet-io.github.io/teenet-wallet/' },
@@ -289,7 +289,7 @@ export const platformPageZh: PlatformPageContent = {
 
   contact: {
     title: '联系我们',
-    body: ['对平台、SDK 或 Developer Preview 有疑问？'],
+    body: ['对平台、SDK 或早期访问有疑问？'],
     email: 'contact@teenet.io',
     followLabel: '关注我们的进展：',
     socialLinks: [

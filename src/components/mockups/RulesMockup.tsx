@@ -72,7 +72,7 @@ export default function RulesMockup() {
           </div>
           <div className="ml-4 flex items-center gap-3">
             <span className="rounded-md bg-gray-100 px-2 py-0.5 font-mono text-xs font-medium text-gray-700">
-              0.1 ETH
+              0.1 tETH
             </span>
             <Toggle on={true} />
           </div>
@@ -111,7 +111,7 @@ export default function RulesMockup() {
           </div>
           <div className="ml-4 flex items-center gap-3">
             <span className="rounded-md bg-gray-100 px-2 py-0.5 font-mono text-xs font-medium text-gray-700">
-              2.0 ETH
+              2.0 tETH
             </span>
             <Toggle on={false} />
           </div>

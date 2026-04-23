@@ -2,21 +2,21 @@ const transactions = [
   {
     id: 1,
     address: '0x4f8a…3c21',
-    amount: '-0.5 ETH',
+    amount: '-0.5 tETH',
     status: 'confirmed' as const,
     label: 'Sent',
   },
   {
     id: 2,
     address: '0x91de…77b4',
-    amount: '+1.2 ETH',
+    amount: '+1.2 tETH',
     status: 'confirmed' as const,
     label: 'Received',
   },
   {
     id: 3,
     address: '0x0023…aa5f',
-    amount: '-0.05 ETH',
+    amount: '-0.05 tETH',
     status: 'pending' as const,
     label: 'Sent',
   },
@@ -36,7 +36,7 @@ export default function WalletMockup() {
   return (
     <div
       role="img"
-      aria-label="Wallet card showing Ethereum balance and recent transactions"
+      aria-label="Wallet card showing a testnet Ethereum balance and recent transactions"
       className="w-full max-w-sm rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden"
     >
       {/* Card header */}
@@ -53,13 +53,13 @@ export default function WalletMockup() {
             </svg>
             <span className="text-sm font-medium text-gray-300">Ethereum</span>
           </div>
-          <span className="rounded-full bg-gray-700 px-2 py-0.5 text-xs text-gray-300">Mainnet</span>
+          <span className="rounded-full bg-gray-700 px-2 py-0.5 text-xs text-gray-300">Testnet</span>
         </div>
 
         <div className="mt-4">
-          <p className="text-xs text-gray-500">Total balance</p>
-          <p className="mt-1 text-3xl font-bold tracking-tight text-white">2.45 ETH</p>
-          <p className="mt-0.5 text-sm text-gray-400">≈ $6,284.50 USD</p>
+          <p className="text-xs text-gray-500">Testnet balance</p>
+          <p className="mt-1 text-3xl font-bold tracking-tight text-white">2.45 tETH</p>
+          <p className="mt-0.5 text-sm text-gray-400">For developer trial use only</p>
         </div>
 
         <div className="mt-4 font-mono text-xs text-gray-500">0x7a3b…f12e</div>

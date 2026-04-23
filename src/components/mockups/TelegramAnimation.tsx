@@ -66,7 +66,7 @@ export default function TelegramAnimation({ elapsed, isGap }: TelegramAnimationP
         {show(T_USER_MSG) && (
           <div className="flex justify-end animate-[message-in_0.3s_ease-out]">
             <div className="bg-gray-900 rounded-2xl rounded-br-sm px-3.5 py-2.5 max-w-[78%] shadow-sm">
-              <p className="text-sm text-white leading-snug">Send 0.8 ETH to</p>
+              <p className="text-sm text-white leading-snug">Send 0.8 tETH to</p>
               <p className="text-xs text-gray-400 font-mono mt-0.5">0xabc...def</p>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function TelegramAnimation({ elapsed, isGap }: TelegramAnimationP
               <p className="text-xs text-gray-500 mt-0.5">Approval required</p>
               {/* Rule details */}
               <div className="mt-3 pt-2.5 border-t border-gray-100 space-y-1.5">
-                <RuleRow label="Per-tx limit" value="0.1 ETH" />
+                <RuleRow label="Per-tx limit" value="0.1 tETH" />
                 <RuleRow label="Allowed contracts" value="Uniswap, Aave" />
               </div>
             </div>
@@ -123,7 +123,7 @@ export default function TelegramAnimation({ elapsed, isGap }: TelegramAnimationP
           <div className="flex justify-start animate-[card-in_0.4s_ease-out]">
             <div className="bg-white rounded-xl px-4 py-4 w-[90%] shadow-md border border-gray-200">
               <p className="text-xs text-gray-500 text-center">You are about to send</p>
-              <p className="text-xl font-bold text-gray-900 text-center mt-1.5">0.8 ETH</p>
+              <p className="text-xl font-bold text-gray-900 text-center mt-1.5">0.8 tETH</p>
               <p className="text-xs text-gray-500 text-center mt-1 font-mono">to 0xabc...def</p>
 
               <button
@@ -156,7 +156,7 @@ export default function TelegramAnimation({ elapsed, isGap }: TelegramAnimationP
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </div>
-                <p className="text-sm text-emerald-700 font-medium">Passkey verified — Transaction sent</p>
+                <p className="text-sm text-emerald-700 font-medium">Passkey verified — Testnet transaction sent</p>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function ChatMockup() {
         {/* User message */}
         <div className="flex justify-end">
           <div className="max-w-[78%] rounded-2xl rounded-tr-sm bg-gray-900 px-3.5 py-2.5">
-            <p className="text-sm text-white">Create a new wallet on Ethereum</p>
+            <p className="text-sm text-white">Create a new testnet wallet on Ethereum</p>
           </div>
         </div>
 
@@ -35,7 +35,7 @@ export default function ChatMockup() {
         {/* User message */}
         <div className="flex justify-end">
           <div className="max-w-[78%] rounded-2xl rounded-tr-sm bg-gray-900 px-3.5 py-2.5">
-            <p className="text-sm text-white">Send 0.5 ETH to</p>
+            <p className="text-sm text-white">Send 0.5 tETH to</p>
             <p className="font-mono text-xs text-gray-300">0xabc…def</p>
           </div>
         </div>

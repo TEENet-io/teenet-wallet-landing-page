@@ -4,7 +4,7 @@ export const en: ContentData = {
   locale: 'en',
   meta: {
     title: 'A Trusted Wallet for Agentic Applications | TEENet Wallet',
-    description: 'Create and use on-chain wallets through chat, set rules for sensitive actions, and approve risk with Passkey — built for agentic applications and secured by TEENet trusted execution.',
+    description: 'An open-source alpha wallet for agentic applications. Available for developer trials on testnet, with hardware-enforced rules and Passkey approval.',
     ogLocale: 'en_US',
   },
   header: {
@@ -16,21 +16,21 @@ export const en: ContentData = {
       { label: 'Developers', href: '#developers' },
       { label: 'FAQ', href: '#faq' },
     ],
-    ctaPrimary: 'Join Beta',
+    ctaPrimary: 'Request Alpha Access',
     ctaSecondary: 'Watch Demo',
   },
   hero: {
     eyebrow: 'For developers, builders, and teams shipping agentic applications',
     headline: 'A Wallet Your Agent Can Use\nWithout Putting Your Assets at Risk',
-    subheadline: 'Let your agent act. Keep approval for what matters.',
-    badges: ['Open source', 'Your rules, enforced by hardware', 'Passkey approval'],
-    ctaPrimary: 'Join Beta',
+    subheadline: 'Let your agent act. Keep approval for what matters. Open-source alpha, available for developer trials on testnet.',
+    badges: ['Open source', 'Alpha', 'Testnet only', 'Your rules, enforced by hardware'],
+    ctaPrimary: 'Request Alpha Access',
     ctaSecondary: 'Watch Demo',
-    tagline: 'Built for agentic applications. Secured by TEENet.',
+    tagline: 'Open-source alpha for developer trials on testnet. Secured by TEENet.',
     flowDiagram: {
       nodes: [
-        { title: 'Agent acts', subtitle: 'Send 0.8 ETH' },
-        { title: 'Rules check', subtitle: 'Exceeds 50 USD limit' },
+        { title: 'Agent acts', subtitle: 'Send 0.8 tETH' },
+        { title: 'Rules check', subtitle: 'Exceeds 0.1 tETH limit' },
         { title: 'You approve', subtitle: 'Passkey confirmed' },
       ],
     },
@@ -38,7 +38,7 @@ export const en: ContentData = {
   whyThisMatters: {
     transition: 'What changes when your agent has a wallet',
     title: 'Why you\'d actually want this wallet',
-    subtitle: 'Your agent handles the routine. You handle what matters. Here\'s what that looks like.',
+    subtitle: 'Your agent handles the routine. You handle what matters. Here\'s what that looks like in the current alpha.',
     cards: [
       { title: 'Let your agent do real work', description: 'Balances, transfers, activity checks — your agent handles day-to-day wallet tasks so you don\'t have to.' },
       { title: 'Stay in control', description: 'Set transfer limits, restrict which contracts your agent can interact with, and require approval for rule changes — all configurable by you.' },
@@ -52,8 +52,8 @@ export const en: ContentData = {
   },
   howItWorks: {
     eyebrow: 'How it works',
-    title: 'A real transaction, start to finish',
-    subtitle: 'Your agent prepares a transfer. The wallet checks it against your rules. You confirm with Passkey.',
+    title: 'A testnet transaction, start to finish',
+    subtitle: 'Your agent prepares a testnet transfer. The wallet checks it against your rules. You confirm with Passkey.',
     steps: [
       {
         title: 'You ask, your agent prepares',
@@ -96,7 +96,7 @@ export const en: ContentData = {
   developers: {
     eyebrow: 'For developers and builders',
     title: 'Open source. Ready to fork.',
-    subtitle: 'The wallet app and agent skills are fully open source. Clone it, customize it, or use it as a reference for your own agentic application.',
+    subtitle: 'The wallet app and agent skills are fully open source. Explore the alpha implementation, customize it, or use it as a reference for your own agentic application.',
     ctaPrimary: 'View on GitHub',
     ctaSecondary: 'Read the docs',
     points: [
@@ -147,7 +147,7 @@ export const en: ContentData = {
       },
       {
         question: 'How do I get started?',
-        answer: 'You can join the beta, watch the demo, or go to GitHub if you want to explore the implementation and build on top of it.',
+        answer: 'You can request alpha access for the testnet trial, watch the demo, or go to GitHub if you want to explore the implementation and build on top of it.',
       },
       {
         question: 'Can I build my own agent app on TEENet?',
@@ -155,23 +155,23 @@ export const en: ContentData = {
       },
       {
         question: 'Can I export my private keys?',
-        answer: 'No. During the Beta period, private keys are generated and stored exclusively inside hardware-protected environments and cannot be exported. This is a security decision to protect your assets while the platform matures — it ensures your keys are never exposed to software or operators. Your on-chain assets are always yours: you can transfer them to any external wallet at any time. We will revisit this policy based on community feedback and security assessments as the platform evolves.',
+        answer: 'Not during the alpha. Wallet keys are generated and stored exclusively inside hardware-protected environments and cannot be exported. The current alpha is limited to developer trials on testnet and does not support mainnet assets. We will revisit this policy based on community feedback and security assessments as the platform evolves.',
       },
     ],
     ctaBridge: 'Ready to try it — or build with it?',
   },
   finalCTA: {
-    title: 'Ready to try it — or build with it?',
+    title: 'Ready to explore the alpha — or build with it?',
     subtitle: 'Give your agent a wallet with more control, safer approvals, and a flow built for real use.',
-    ctaPrimary: 'Join Beta',
+    ctaPrimary: 'Request Alpha Access',
     ctaSecondary: 'View on GitHub',
     ctaTertiary: 'Watch Demo',
     ctaPlatform: 'Explore TEENet',
-    supporting: 'Built for agentic applications. Protected where wallet control matters most.',
+    supporting: 'Open-source alpha for developer trials on testnet.',
   },
   footer: {
     brandName: 'TEENet Wallet',
-    brandLine: 'Built for agentic applications. Protected where wallet control matters most.',
+    brandLine: 'Open-source alpha for agentic applications. Testnet only.',
     linkGroups: [
       {
         title: 'Product',
@@ -189,7 +189,7 @@ export const en: ContentData = {
           { label: 'Docs', href: '#' },
           { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
           { label: 'TEENet Platform', href: '/en/platform' },
-          { label: 'Developer Preview', href: '#developers' },
+          { label: 'Early access', href: '#developers' },
           { label: 'Contact', href: 'mailto:contact@teenet.io' },
         ],
       },
@@ -197,7 +197,7 @@ export const en: ContentData = {
         title: 'Resources',
         links: [
           { label: 'Watch Demo', href: '#' },
-          { label: 'Join Beta', href: '#' },
+          { label: 'Request Alpha Access', href: '#' },
           { label: 'TEENet Wallet', href: '#' },
           { label: 'TEENet', href: 'https://github.com/TEENet-io' },
         ],
@@ -214,10 +214,10 @@ export const en: ContentData = {
     copyright: '\u00a9 2026 TEENet Wallet',
   },
   betaForm: {
-    title: 'Join the Beta',
+    title: 'Request Alpha Access',
     placeholder: 'Enter your email',
     submit: 'Sign Up',
-    success: "Thanks! We'll be in touch.",
+    success: "Thanks! We'll be in touch about alpha access.",
     error: 'Please enter a valid email address.',
     close: 'Close',
   },
