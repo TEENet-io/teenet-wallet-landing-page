@@ -7,20 +7,18 @@ import { trackEvent } from '@/lib/analytics'
 interface HeroProps {
   content: ContentData['hero']
   locale: Locale
-  onBetaClick: () => void
 }
 
-export default function Hero({ content, locale, onBetaClick }: HeroProps) {
+const WALLET_REPO_URL = 'https://github.com/TEENet-io/teenet-wallet'
+const WALLET_APP_URL = 'https://wallet.teenet.app'
+
+export default function Hero({ content, locale }: HeroProps) {
   function handlePrimaryClick() {
-    trackEvent('hero_cta_primary', { locale })
-    onBetaClick()
+    trackEvent('github_click', { locale, source: 'hero' })
   }
 
   function handleSecondaryClick() {
-    trackEvent('hero_cta_secondary', { locale })
-    trackEvent('demo_click', { locale, source: 'hero' })
-    const el = document.getElementById('faq')
-    el?.scrollIntoView({ behavior: 'smooth' })
+    trackEvent('app_click', { locale, source: 'hero' })
   }
 
   const { nodes } = content.flowDiagram
@@ -74,18 +72,24 @@ export default function Hero({ content, locale, onBetaClick }: HeroProps) {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center items-center gap-4 mt-12">
-          <button
+          <a
+            href={WALLET_REPO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={handlePrimaryClick}
             className="bg-white text-slate-900 px-7 py-3 rounded-lg text-sm font-semibold hover:bg-slate-100 transition-colors shadow-lg shadow-white/10"
           >
             {content.ctaPrimary}
-          </button>
-          <button
+          </a>
+          <a
+            href={WALLET_APP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={handleSecondaryClick}
             className="border border-slate-600 text-slate-300 px-7 py-3 rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors"
           >
             {content.ctaSecondary}
-          </button>
+          </a>
         </div>
 
         {/* Tagline */}

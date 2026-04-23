@@ -28,7 +28,9 @@ export default function Footer({ content, locale }: FooterProps) {
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="#"
+              href="https://github.com/TEENet-io"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="GitHub"
               className="text-gray-400 hover:text-gray-600 transition-colors"
               onClick={() => handleLinkClick('github')}
@@ -38,7 +40,9 @@ export default function Footer({ content, locale }: FooterProps) {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://x.com/AiTeenet"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Twitter"
               className="text-gray-400 hover:text-gray-600 transition-colors"
               onClick={() => handleLinkClick('twitter')}
@@ -50,7 +54,7 @@ export default function Footer({ content, locale }: FooterProps) {
           </div>
         </div>
 
-        {/* 4 link columns — always in one row */}
+        {/* Link columns */}
         <div style={{ display: 'flex', gap: '2rem' }}>
           {content.linkGroups.map((group) => (
             <div key={group.title} style={{ flex: '1 1 0' }}>

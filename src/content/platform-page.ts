@@ -69,58 +69,57 @@ export const platformPageEn: PlatformPageContent = {
   meta: {
     title: 'TEENet Platform | TEENet Wallet',
     description:
-      'The infrastructure behind TEENet Wallet. Hardware-enforced trust for agentic applications that handle keys, signing, and sensitive operations.',
+      'The builder-facing platform behind TEENet Wallet. Hardware-isolated execution, key custody, and policy enforcement for agentic applications.',
   },
   backLink: '← Back to Home',
   title: 'TEENet Platform',
 
   fromWallet: {
-    title: 'The wallet was just one example',
+    title: 'Start with the wallet, build beyond it',
     body: [
-      'You just saw an alpha wallet where an AI agent manages testnet assets without ever touching a private key. Spending limits enforced by hardware. Approval flows no backend can bypass.',
-      'That security model isn\u2019t specific to wallets \u2014 or even to blockchain keys. Any secret your agent needs to act on the world (private keys, API keys, OAuth tokens) faces the same risks.',
-      'TEENet is the infrastructure that makes it possible.',
+      'TEENet Wallet is an alpha reference app: an agent can manage testnet assets without ever holding a private key.',
+      'The same model applies anywhere your application handles secrets, signs requests, or needs approval policies. TEENet is the control layer underneath.',
     ],
   },
 
   problems: {
-    title: 'If your agent touches secrets, you have a problem',
+    title: 'Three problems builders hit first',
     painPoints: [
       {
-        title: 'Your secrets live in your infrastructure',
+        title: 'Secrets sit in your infrastructure',
         description:
-          'Your secrets sit in .env files, databases, or server memory. One breach \u2014 a vulnerability, a misconfiguration, an insider \u2014 and they\u2019re gone. This applies to private keys, API keys, OAuth tokens, and any credential your agent needs.',
+          'Private keys, API keys, and OAuth tokens end up in env files, databases, or ordinary server memory.',
       },
       {
-        title: 'Your security logic can be bypassed',
+        title: 'Policy checks are soft',
         description:
-          'You write transfer limits, allowlists, and approval checks into your code. But that code runs on an ordinary server \u2014 anyone with access can modify it, skip the checks, and call signing directly. Your security is only as strong as your deployment environment.',
+          'Allowlists, limits, and approval rules live in normal backend code and can be bypassed by anyone who controls the server.',
       },
       {
-        title: 'You can\u2019t prove you won\u2019t cheat',
+        title: 'You cannot prove operator limits',
         description:
-          'Even if you would never misuse a user\u2019s secrets, you have no technical way to prove it. \u201CTrust me\u201D is a promise, not a guarantee.',
+          'Users still have to trust that you, your cloud provider, or a compromised node cannot read or misuse their secrets.',
       },
     ],
   },
 
   solutions: {
-    title: 'Hardware-enforced trust, not promises',
+    title: 'What TEENet gives you',
     items: [
       {
-        title: 'Secrets never leave the hardware boundary',
+        title: 'Hardware-isolated execution',
         description:
-          'Secrets are generated inside Trusted Execution Environments (TEEs) and never exported. The CPU enforces memory isolation \u2014 no external process, no OS, no operator can read them. Even if the server is fully compromised, the secrets stay inaccessible.',
+          'Sensitive logic runs inside Trusted Execution Environments instead of ordinary backend memory.',
       },
       {
-        title: 'Code integrity guaranteed by hardware',
+        title: 'Managed custody and policy enforcement',
         description:
-          'Your application runs inside the TEE. The hardware guarantees the running code is exactly the code that was verified \u2014 it cannot be modified, replaced, or bypassed at runtime. The security logic you write runs with the same hardware-enforced integrity as the rest of your application.',
+          'Keys are created inside the TEE, stay there, and only sign when the policy you defined allows it.',
       },
       {
-        title: 'Provably unable to cheat',
+        title: 'Attested distributed signing',
         description:
-          'TEENet combines hardware isolation (TEE) with threshold signatures (TSS) and multi-party computation (MPC) to shard keys across multiple independent nodes. No single party \u2014 including the operator \u2014 can reconstruct a key or sign alone. Even physical compromise of any single node yields only a useless shard, not a complete key. \u201CWe can\u2019t access your secrets\u201D becomes a hardware-enforced fact, verifiable through remote attestation.',
+          'Keys are sharded across independent nodes, and every node has to prove its code before it can participate.',
       },
     ],
   },
@@ -146,26 +145,35 @@ export const platformPageEn: PlatformPageContent = {
   },
 
   getStarted: {
-    title: 'Get started',
+    title: 'Start building',
     description:
-      'Platform access is still early. We\u2019re working with a small group of developers to shape the platform and SDK.',
+      'The platform is still early. The best way in today is through the wallet reference app, the docs, and the SDK.',
     paths: [
       {
-        title: 'Explore the open-source wallet',
+        title: 'Explore the wallet reference app',
         description:
-          'TEENet Wallet is fully open source and currently available as an alpha for developer trials on testnet.',
+          'Read the open-source wallet, inspect the approval flow, or compare it with the live alpha app.',
         links: [
           { label: 'Wallet on GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
           { label: 'Wallet Documentation', href: 'https://teenet-io.github.io/teenet-wallet/' },
+          { label: 'Live Alpha App', href: 'https://wallet.teenet.app' },
         ],
       },
       {
-        title: 'Documentation',
-        description: 'Full platform documentation, SDK reference, and integration guides:',
-        inlineLink: {
-          label: 'https://teenet-io.github.io',
-          href: 'https://teenet-io.github.io',
-        },
+        title: 'Read docs and SDK',
+        description: 'Use the platform docs and SDK reference as the builder entry point.',
+        links: [
+          { label: 'Platform Docs', href: 'https://teenet-io.github.io' },
+          { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
+        ],
+      },
+      {
+        title: 'Talk with us early',
+        description: 'If you are building an agentic application and need custody or policy primitives, reach out early.',
+        links: [
+          { label: 'Email Us', href: 'mailto:contact@teenet.io' },
+          { label: 'TEENet GitHub', href: 'https://github.com/TEENet-io' },
+        ],
       },
     ],
   },
@@ -186,58 +194,57 @@ export const platformPageZh: PlatformPageContent = {
   meta: {
     title: 'TEENet 平台 | TEENet Wallet',
     description:
-      'TEENet Wallet 背后的基础设施。为处理密钥、签名和敏感操作的 Agent 应用提供硬件强制的信任。',
+      '面向 builder 的 TEENet 平台介绍。为 Agent 应用提供硬件隔离执行、密钥保管和策略控制。',
   },
   backLink: '← 返回首页',
   title: 'TEENet 平台',
 
   fromWallet: {
-    title: '钱包只是其中一个例子',
+    title: '先从钱包开始，再往更广的应用走',
     body: [
-      '你刚刚看到的是一个 Alpha 钱包——AI Agent 在完全不接触私钥的情况下管理测试网资产。支出限额由硬件强制执行。审批流程无法被任何后端绕过。',
-      '这种安全模型并不只适用于钱包——甚至不只适用于区块链密钥。任何你的 Agent 需要用来与外部世界交互的秘密（私钥、API key、OAuth token）都面临同样的风险。',
-      'TEENet 就是让这一切成为可能的基础设施。',
+      'TEENet Wallet 是一个 Alpha 参考应用：Agent 可以管理测试网资产，但整个过程中都拿不到私钥。',
+      '只要你的应用会处理秘密、发起签名，或者需要审批策略，这套模型都成立。TEENet 就是它底下的控制层。',
     ],
   },
 
   problems: {
-    title: '如果你的 Agent 接触秘密，你就有麻烦了',
+    title: 'Builder 最先撞上的三个问题',
     painPoints: [
       {
-        title: '你的秘密就在你自己的基础设施里',
+        title: '秘密仍然放在你的基础设施里',
         description:
-          '你的秘密放在 .env 文件、数据库，或者服务器的内存中。一次攻破——一个漏洞、一次配置失误、一个内部人员——它们就没了。这适用于私钥、API key、OAuth token，以及你的 Agent 需要的任何凭证。',
+          '私钥、API key 和 OAuth token 最终还是会落在 .env、数据库或普通服务器内存里。',
       },
       {
-        title: '你的安全逻辑可以被绕过',
+        title: '策略检查其实很软',
         description:
-          '你把转账限额、白名单和审批检查写在代码里。但这些代码运行在普通的服务器上——任何能访问这台服务器的人都可以修改代码、跳过检查，直接调用签名。你的安全性只取决于部署环境的牢靠程度。',
+          '白名单、限额和审批规则都写在普通后端代码里，只要有人控制服务器，就能绕过它们。',
       },
       {
-        title: '你无法证明自己不会作恶',
+        title: '你无法证明运营方的边界',
         description:
-          '即使你绝不会滥用用户的秘密，你也没有任何技术手段可以证明这一点。"请相信我"只是承诺，而不是保证。',
+          '用户仍然只能相信你、云厂商，或被攻破的节点不会读取和滥用这些秘密。',
       },
     ],
   },
 
   solutions: {
-    title: '硬件强制的信任，而不是承诺',
+    title: 'TEENet 提供什么',
     items: [
       {
-        title: '秘密永远不会离开硬件边界',
+        title: '硬件隔离执行',
         description:
-          '秘密在可信执行环境（TEE）内生成，永远不会被导出。CPU 强制执行内存隔离——任何外部进程、操作系统或运营方都无法读取它们。即使服务器被完全攻破，秘密仍然无法被访问。',
+          '敏感逻辑在 TEE 内运行，而不是在普通后端内存中运行。',
       },
       {
-        title: '代码完整性由硬件保证',
+        title: '托管式密钥保管与策略执行',
         description:
-          '你的应用在 TEE 内运行。硬件保证正在运行的代码与经过验证的代码完全一致——运行时无法被修改、替换或绕过。你写下的安全逻辑与应用的其余部分享有同等级别的硬件强制完整性。',
+          '密钥在 TEE 内生成并留在那里，只有满足你定义的策略时才会参与签名。',
       },
       {
-        title: '可证明无法作恶',
+        title: '可证明的分布式签名',
         description:
-          'TEENet 将硬件隔离（TEE）与门限签名（TSS）和多方安全计算（MPC）相结合，将密钥分片到多个独立节点上。没有任何单一方——包括运营方——能独自重建密钥或完成签名。即使某个节点被物理攻破，攻击者得到的也只是一个无用的分片，而非完整密钥。"我们无法访问你的秘密"成为一项由硬件强制执行的事实，可通过远程证明进行验证。',
+          '密钥被分片到多个独立节点上，而且每个节点都必须先证明自己运行的是预期代码。',
       },
     ],
   },
@@ -263,26 +270,35 @@ export const platformPageZh: PlatformPageContent = {
   },
 
   getStarted: {
-    title: '开始使用',
+    title: '开始构建',
     description:
-      '平台访问目前仍处于很早期的阶段。我们正与一小批开发者一起打磨平台和 SDK。',
+      '平台目前还很早期。现阶段最好的入口是钱包参考实现、文档和 SDK。',
     paths: [
       {
-        title: '探索开源钱包',
+        title: '先看钱包参考实现',
         description:
-          'TEENet Wallet 完全开源，当前以 Alpha 形式开放给开发者在测试网上试用。',
+          '阅读开源钱包、理解审批流，或者和线上 Alpha App 对照着看。',
         links: [
           { label: '钱包 (GitHub)', href: 'https://github.com/TEENet-io/teenet-wallet' },
           { label: '钱包文档', href: 'https://teenet-io.github.io/teenet-wallet/' },
+          { label: '线上 Alpha App', href: 'https://wallet.teenet.app' },
         ],
       },
       {
-        title: '文档',
-        description: '完整的平台文档、SDK 参考和集成指南：',
-        inlineLink: {
-          label: 'https://teenet-io.github.io',
-          href: 'https://teenet-io.github.io',
-        },
+        title: '查看文档和 SDK',
+        description: '从平台文档和 SDK 参考开始，了解集成方式。',
+        links: [
+          { label: '平台文档', href: 'https://teenet-io.github.io' },
+          { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
+        ],
+      },
+      {
+        title: '尽早和我们沟通',
+        description: '如果你正在构建需要托管密钥或策略控制的 Agent 应用，欢迎尽早联系。',
+        links: [
+          { label: '发送邮件', href: 'mailto:contact@teenet.io' },
+          { label: 'TEENet GitHub', href: 'https://github.com/TEENet-io' },
+        ],
       },
     ],
   },
