@@ -34,7 +34,6 @@ export interface ContentData {
   hero: {
     eyebrow: string
     headline: string
-    subheadline: string
     badges: string[]
     ctaPrimary: string
     ctaSecondary: string

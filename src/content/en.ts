@@ -17,16 +17,15 @@ export const en: ContentData = {
       { label: 'TEENet', href: '#teenet' },
     ],
     ctaPrimary: 'View on GitHub',
-    ctaSecondary: 'Open Alpha App',
+    ctaSecondary: 'Open App',
   },
   hero: {
     eyebrow: 'For developers building agentic applications',
-    headline: 'An Open-Source Wallet\nfor Agentic Applications',
-    subheadline: 'Read the alpha reference app, fork the flow, or try the limited testnet alpha. TEENet keeps risky actions behind hardware-enforced rules and Passkey approval.',
-    badges: ['Open source', 'Alpha', 'Testnet only', 'First 500 users'],
+    headline: 'An Open-Source Wallet for Agentic Applications',
+    badges: ['Open source', 'Testnet alpha', 'TEE-enforced rules'],
     ctaPrimary: 'View on GitHub',
-    ctaSecondary: 'Open Alpha App',
-    tagline: 'Limited testnet alpha is live at wallet.teenet.app.',
+    ctaSecondary: 'Open App',
+    tagline: 'Limited alpha: first 500 users at wallet.teenet.app.',
     flowDiagram: {
       nodes: [
         { title: 'Agent acts', subtitle: 'Send 0.8 tETH' },
@@ -37,7 +36,7 @@ export const en: ContentData = {
   },
   howItWorks: {
     eyebrow: 'How it works',
-    title: 'One action, three checks',
+    title: 'One action, three steps',
     subtitle: 'The agent prepares the transaction, TEENet checks policy, and you approve only when needed.',
     steps: [
       {
@@ -101,7 +100,7 @@ export const en: ContentData = {
     title: 'Start with the wallet. Keep TEENet in view.',
     subtitle: 'Read the code, try the limited alpha app, then dig into the platform behind it.',
     ctaPrimary: 'View on GitHub',
-    ctaSecondary: 'Open Alpha App',
+    ctaSecondary: 'Open App',
     ctaPlatform: 'Explore TEENet Platform',
     supporting: 'Limited alpha registration now open for the first 500 testnet users.',
   },
@@ -115,7 +114,7 @@ export const en: ContentData = {
           { label: 'Wallet', href: '#product' },
           { label: 'How it works', href: '#how-it-works' },
           { label: 'Security', href: '#security' },
-          { label: 'Open alpha app', href: 'https://wallet.teenet.app' },
+          { label: 'Open App', href: 'https://wallet.teenet.app' },
         ],
       },
       {

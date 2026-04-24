@@ -88,9 +88,9 @@ export const platformPageEn: PlatformPageContent = {
           'Allowlists, limits, and approval rules live in normal backend code and can be bypassed by anyone who controls the server.',
       },
       {
-        title: 'You cannot prove operator limits',
+        title: 'Signing is a single point of failure',
         description:
-          'Users still have to trust that you, your cloud provider, or a compromised node cannot read or misuse their secrets.',
+          'If one service or node controls signing, one compromise can approve sensitive actions.',
       },
     ],
   },
@@ -109,9 +109,9 @@ export const platformPageEn: PlatformPageContent = {
           'Keys are created inside the TEE, stay there, and only sign when the policy you defined allows it.',
       },
       {
-        title: 'Attested distributed signing',
+        title: 'Distributed signing with attested nodes',
         description:
-          'Keys are sharded across independent nodes, and every node has to prove its code before it can participate.',
+          'Keys are sharded across attested nodes, removing single-node signing power.',
       },
     ],
   },
@@ -201,9 +201,9 @@ export const platformPageZh: PlatformPageContent = {
           '白名单、限额和审批规则都写在普通后端代码里，只要有人控制服务器，就能绕过它们。',
       },
       {
-        title: '你无法证明运营方的边界',
+        title: '签名权很容易变成单点',
         description:
-          '用户仍然只能相信你、云厂商，或被攻破的节点不会读取和滥用这些秘密。',
+          '如果签名权集中在一个服务或节点里，一次入侵就可能直接放行敏感操作。',
       },
     ],
   },
@@ -222,9 +222,9 @@ export const platformPageZh: PlatformPageContent = {
           '密钥在 TEE 内生成并留在那里，只有满足你定义的策略时才会参与签名。',
       },
       {
-        title: '可证明的分布式签名',
+        title: '基于证明的分布式签名',
         description:
-          '密钥被分片到多个独立节点上，而且每个节点都必须先证明自己运行的是预期代码。',
+          '密钥被分片到多个已证明节点上，从而去掉单点签名权。',
       },
     ],
   },

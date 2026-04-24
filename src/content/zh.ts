@@ -17,16 +17,15 @@ export const zh: ContentData = {
       { label: 'TEENet', href: '#teenet' },
     ],
     ctaPrimary: '前往 GitHub',
-    ctaSecondary: '打开 Alpha App',
+    ctaSecondary: '打开 App',
   },
   hero: {
     eyebrow: '面向正在构建 Agent 应用的开发者',
-    headline: '一个面向 Agent 应用的\n开源钱包参考实现',
-    subheadline: '你可以直接研究这套 Alpha 参考实现、fork 这条交互流程，或者去体验有限开放的测试网版本。TEENet 会把高风险操作留在硬件级规则和 Passkey 确认之后。',
-    badges: ['开源', 'Alpha', '仅限测试网', '前 500 位用户'],
+    headline: '一个面向 Agent 应用的开源钱包参考实现',
+    badges: ['开源', '测试网 Alpha', 'TEE 强制规则执行'],
     ctaPrimary: '前往 GitHub',
-    ctaSecondary: '打开 Alpha App',
-    tagline: '有限开放的测试网 Alpha 已上线：wallet.teenet.app。',
+    ctaSecondary: '打开 App',
+    tagline: '有限开放 Alpha：前 500 位用户可前往 wallet.teenet.app。',
     flowDiagram: {
       nodes: [
         { title: 'Agent 发起操作', subtitle: '发送 0.8 tETH' },
@@ -37,7 +36,7 @@ export const zh: ContentData = {
   },
   howItWorks: {
     eyebrow: '如何工作',
-    title: '一个操作，三道检查',
+    title: '一个操作，三个步骤',
     subtitle: 'Agent 准备交易，TEENet 检查策略，只有需要时你才确认。',
     steps: [
       {
@@ -101,7 +100,7 @@ export const zh: ContentData = {
     title: '先从钱包开始，再理解背后的 TEENet',
     subtitle: '先看代码，或直接试用有限开放的 Alpha App，然后再深入平台能力。',
     ctaPrimary: '前往 GitHub',
-    ctaSecondary: '打开 Alpha App',
+    ctaSecondary: '打开 App',
     ctaPlatform: '探索 TEENet 平台',
     supporting: '有限开放的测试网 Alpha 现已面向前 500 位用户开放注册。',
   },
@@ -115,7 +114,7 @@ export const zh: ContentData = {
           { label: '钱包', href: '#product' },
           { label: '如何工作', href: '#how-it-works' },
           { label: '安全性', href: '#security' },
-          { label: '打开 Alpha App', href: 'https://wallet.teenet.app' },
+          { label: '打开 App', href: 'https://wallet.teenet.app' },
         ],
       },
       {
