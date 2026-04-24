@@ -36,6 +36,7 @@ export interface PlatformPageContent {
   fromWallet: {
     title: string
     body: string[]
+    actions: { label: string; href: string }[]
   }
   problems: {
     title: string
@@ -71,6 +72,11 @@ export const platformPageEn: PlatformPageContent = {
     body: [
       'TEENet Wallet is an alpha reference app where an agent can manage testnet assets without ever holding a private key.',
       'That same pattern applies anywhere your application handles secrets, signs requests, or needs approval policies.',
+    ],
+    actions: [
+      { label: 'Wallet on GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
+      { label: 'Wallet Docs', href: 'https://teenet-io.github.io/teenet-wallet/' },
+      { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
     ],
   },
 
@@ -184,6 +190,11 @@ export const platformPageZh: PlatformPageContent = {
     body: [
       'TEENet Wallet 是一个 Alpha 参考应用：Agent 可以管理测试网资产，但整个过程中都拿不到私钥。',
       '只要你的应用会处理秘密、发起签名，或者需要审批策略，这套模式就成立。',
+    ],
+    actions: [
+      { label: '钱包 GitHub', href: 'https://github.com/TEENet-io/teenet-wallet' },
+      { label: '钱包文档', href: 'https://teenet-io.github.io/teenet-wallet/' },
+      { label: 'TEENet SDK', href: 'https://github.com/TEENet-io/teenet-sdk' },
     ],
   },
 

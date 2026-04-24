@@ -61,6 +61,24 @@ export default async function PlatformPage({
                 {p}
               </p>
             ))}
+            <div className="flex flex-wrap gap-3 pt-2">
+              {content.fromWallet.actions.map((action, index) => (
+                <a
+                  key={action.href}
+                  href={action.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center rounded-lg px-4 py-2.5 text-sm font-medium transition-colors ${
+                    index === 0
+                      ? 'bg-gray-900 text-white hover:bg-gray-800'
+                      : 'border border-gray-300 text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  {action.label}
+                  <span className="ml-2" aria-hidden="true">&rarr;</span>
+                </a>
+              ))}
+            </div>
           </div>
         </header>
 

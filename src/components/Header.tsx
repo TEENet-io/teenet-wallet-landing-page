@@ -124,15 +124,6 @@ export default function Header({ content, locale }: HeaderProps) {
           {/* Right CTAs — desktop */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href={WALLET_APP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleSecondaryClick}
-              className={`inline-flex items-center justify-center rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${overHero ? 'border-slate-600 text-slate-300 hover:bg-slate-800' : 'border-gray-300 text-gray-700 hover:bg-gray-50'}`}
-            >
-              {content.ctaSecondary}
-            </a>
-            <a
               href={WALLET_REPO_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -140,6 +131,15 @@ export default function Header({ content, locale }: HeaderProps) {
               className={`inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition-colors ${overHero ? 'bg-white text-slate-900 hover:bg-slate-100' : 'bg-gray-900 text-white hover:bg-gray-800'}`}
             >
               {content.ctaPrimary}
+            </a>
+            <a
+              href={WALLET_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleSecondaryClick}
+              className={`inline-flex items-center justify-center rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${overHero ? 'border-slate-600 text-slate-300 hover:bg-slate-800' : 'border-gray-300 text-gray-700 hover:bg-gray-50'}`}
+            >
+              {content.ctaSecondary}
             </a>
             <LanguageToggle locale={locale} dark={overHero} />
           </div>
@@ -212,15 +212,6 @@ export default function Header({ content, locale }: HeaderProps) {
 
           <div className="flex flex-col gap-3 border-t border-gray-100 px-4 py-4">
             <a
-              href={WALLET_APP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleSecondaryClick}
-              className="inline-flex w-full items-center justify-center rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
-            >
-              {content.ctaSecondary}
-            </a>
-            <a
               href={WALLET_REPO_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -228,6 +219,15 @@ export default function Header({ content, locale }: HeaderProps) {
               className="inline-flex w-full items-center justify-center rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-gray-800 transition-colors"
             >
               {content.ctaPrimary}
+            </a>
+            <a
+              href={WALLET_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleSecondaryClick}
+              className="inline-flex w-full items-center justify-center rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+            >
+              {content.ctaSecondary}
             </a>
             <div className="flex justify-center pt-1">
               <LanguageToggle locale={locale} dark={overHero} />

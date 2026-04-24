@@ -4,23 +4,11 @@ interface DevelopersProps {
   content: ContentData['developers']
 }
 
-const CODE_SNIPPET = `import { Client } from "@teenet/sdk"
-
-const client = new Client(URL)
-
-// Generate a key inside the TEE
-const key = await client
-  .generateECDSAKey("secp256k1")
-
-// Set approval policy
-await client.setPermissionPolicy({
-  publicKeyName: key.name,
-  enabled: true,
-  levels: [{ threshold: 2, memberIds: [1,2,3] }]
-})
-
-// Sign — triggers Passkey if policy requires it
-const sig = await client.sign(txHash, key.name)`
+const REPO_MAP = `skill/teenet-wallet  -> agent-facing actions
+handler/             -> policy and approval gates
+chain/               -> testnet transaction adapters
+model/               -> wallets, policies, approvals
+docs/                -> setup and API reference`
 
 const FOLDER_TREE = ['handler/', 'skill/', 'chain/', 'model/', 'docs/']
 
@@ -108,7 +96,7 @@ export default function Developers({ content }: DevelopersProps) {
               </div>
               <div className="px-4 py-3 bg-gray-900">
                 <pre className="text-[11px] leading-relaxed text-gray-300 font-mono overflow-x-auto">
-                  <code>{CODE_SNIPPET}</code>
+                  <code>{REPO_MAP}</code>
                 </pre>
               </div>
             </div>

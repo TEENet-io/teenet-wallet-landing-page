@@ -17,15 +17,15 @@ export const zh: ContentData = {
       { label: 'TEENet', href: '#teenet' },
     ],
     ctaPrimary: '前往 GitHub',
-    ctaSecondary: '打开 App',
+    ctaSecondary: '试用 Alpha',
   },
   hero: {
-    eyebrow: '面向正在构建 Agent 应用的开发者',
+    eyebrow: 'Fork 钱包，试跑流程',
     headline: '一个面向 Agent 应用的开源钱包参考实现',
     badges: ['开源', '测试网 Alpha', 'TEE 强制规则执行'],
     ctaPrimary: '前往 GitHub',
-    ctaSecondary: '打开 App',
-    tagline: '有限开放 Alpha：前 500 位用户可前往 wallet.teenet.app。',
+    ctaSecondary: '试用 Alpha',
+    tagline: '测试网 Alpha 限量开放给前 500 位用户。',
     flowDiagram: {
       nodes: [
         { title: 'Agent 发起操作', subtitle: '发送 0.8 tETH' },
@@ -36,20 +36,20 @@ export const zh: ContentData = {
   },
   howItWorks: {
     eyebrow: '如何工作',
-    title: '一个操作，三个步骤',
-    subtitle: 'Agent 准备交易，TEENet 检查策略，只有需要时你才确认。',
+    title: '仓库里展示了什么',
+    subtitle: '参考应用把 agent skills、策略检查和 Passkey 审批串成了一条钱包流程。',
     steps: [
       {
-        title: 'Agent 先准备动作',
-        description: '你描述目标，Agent 负责处理交易细节。',
+        title: 'Agent skills 调用钱包动作',
+        description: '可以直接查看转账、余额查询和合约调用这些面向 Agent 的 skill。',
       },
       {
-        title: 'TEENet 在 TEE 里检查策略',
-        description: '在任何签名发生前，策略先在硬件保护环境里执行，而不是在 app 里执行。',
+        title: '策略先拦住签名',
+        description: '限额和审批规则会在请求进入签名前先执行。',
       },
       {
-        title: '只有需要时你再确认',
-        description: '超出限额的操作才需要 Passkey 批准，日常动作保持自动通过。',
+        title: 'Passkey 处理例外情况',
+        description: '高风险操作转交用户确认，而不是把直接签名权交给 Agent。',
       },
     ],
   },
@@ -72,14 +72,14 @@ export const zh: ContentData = {
         description: '任何节点要参与签名，都必须先通过远程证明，确认运行的是预期代码。',
       },
       {
-        title: '没有人可以单独签名',
-        description: '必须由多个已证明的节点协同完成签名，所以单一运营方、云服务商或被入侵的服务器都无法单独放行。',
+        title: '单个节点无法独自签名',
+        description: '必须由多个已证明节点协同完成签名，因此单个被入侵节点无法独自放行。',
       },
     ],
   },
   developers: {
     eyebrow: '面向开发者与构建者',
-    title: '开源，也就是拿来 fork 的。',
+    title: '从钱包仓库开始',
     subtitle: '从钱包应用、审批流和 agent skills 开始。你可以把这套仓库当作参考实现，也可以直接作为自己项目的起点。',
     ctaPrimary: '前往 GitHub',
     ctaSecondary: '查看文档',
@@ -97,10 +97,10 @@ export const zh: ContentData = {
     cta: '探索 TEENet 平台',
   },
   finalCTA: {
-    title: '先从钱包开始，再理解背后的 TEENet',
+    title: '先从钱包开始，再看背后的平台',
     subtitle: '先看代码，或直接试用有限开放的 Alpha App，然后再深入平台能力。',
     ctaPrimary: '前往 GitHub',
-    ctaSecondary: '打开 App',
+    ctaSecondary: '试用 Alpha',
     ctaPlatform: '探索 TEENet 平台',
     supporting: '有限开放的测试网 Alpha 现已面向前 500 位用户开放注册。',
   },
@@ -114,7 +114,7 @@ export const zh: ContentData = {
           { label: '钱包', href: '#product' },
           { label: '如何工作', href: '#how-it-works' },
           { label: '安全性', href: '#security' },
-          { label: '打开 App', href: 'https://wallet.teenet.app' },
+          { label: '试用 Alpha', href: 'https://wallet.teenet.app' },
         ],
       },
       {

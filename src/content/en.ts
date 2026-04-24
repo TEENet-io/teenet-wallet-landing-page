@@ -17,15 +17,15 @@ export const en: ContentData = {
       { label: 'TEENet', href: '#teenet' },
     ],
     ctaPrimary: 'View on GitHub',
-    ctaSecondary: 'Open App',
+    ctaSecondary: 'Try Alpha',
   },
   hero: {
-    eyebrow: 'For developers building agentic applications',
+    eyebrow: 'Fork the wallet. Test the flow.',
     headline: 'An Open-Source Wallet for Agentic Applications',
     badges: ['Open source', 'Testnet alpha', 'TEE-enforced rules'],
     ctaPrimary: 'View on GitHub',
-    ctaSecondary: 'Open App',
-    tagline: 'Limited alpha: first 500 users at wallet.teenet.app.',
+    ctaSecondary: 'Try Alpha',
+    tagline: 'Limited testnet alpha is open to the first 500 users.',
     flowDiagram: {
       nodes: [
         { title: 'Agent acts', subtitle: 'Send 0.8 tETH' },
@@ -36,20 +36,20 @@ export const en: ContentData = {
   },
   howItWorks: {
     eyebrow: 'How it works',
-    title: 'One action, three steps',
-    subtitle: 'The agent prepares the transaction, TEENet checks policy, and you approve only when needed.',
+    title: 'What the repo shows',
+    subtitle: 'The reference app connects agent skills, policy checks, and Passkey approval in one wallet flow.',
     steps: [
       {
-        title: 'The agent prepares the action',
-        description: 'You describe the goal. The agent handles the transaction details.',
+        title: 'Agent skills call wallet actions',
+        description: 'Inspect transfers, balance checks, and contract calls from the agent-facing skill layer.',
       },
       {
-        title: 'TEENet checks policy inside the TEE',
-        description: 'Before anything is signed, the policy runs inside hardware-protected execution, not in the app.',
+        title: 'Policies gate signing',
+        description: 'Limits and approval rules run before the request reaches signing.',
       },
       {
-        title: 'You approve only when needed',
-        description: 'Actions outside your limits require Passkey approval. Routine actions stay automatic.',
+        title: 'Passkey handles exceptions',
+        description: 'High-risk actions move to user approval instead of giving the agent direct signing power.',
       },
     ],
   },
@@ -72,14 +72,14 @@ export const en: ContentData = {
         description: 'Before a node can join signing, it has to prove through hardware attestation that the expected code is running.',
       },
       {
-        title: 'No one signs alone',
-        description: 'Multiple attested nodes must cooperate, so no single operator, cloud provider, or compromised server can sign on its own.',
+        title: 'No single node signs alone',
+        description: 'Multiple attested nodes must cooperate, so one compromised node cannot sign by itself.',
       },
     ],
   },
   developers: {
     eyebrow: 'For developers and builders',
-    title: 'Open source. Built to be forked.',
+    title: 'Start from the wallet repo',
     subtitle: 'Start with the wallet app, approval flow, and agent skills. Use the repo as your reference app or your base build.',
     ctaPrimary: 'View on GitHub',
     ctaSecondary: 'Read the docs',
@@ -97,10 +97,10 @@ export const en: ContentData = {
     cta: 'Explore TEENet Platform',
   },
   finalCTA: {
-    title: 'Start with the wallet. Keep TEENet in view.',
+    title: 'Start with the wallet. See the platform behind it.',
     subtitle: 'Read the code, try the limited alpha app, then dig into the platform behind it.',
     ctaPrimary: 'View on GitHub',
-    ctaSecondary: 'Open App',
+    ctaSecondary: 'Try Alpha',
     ctaPlatform: 'Explore TEENet Platform',
     supporting: 'Limited alpha registration now open for the first 500 testnet users.',
   },
@@ -114,7 +114,7 @@ export const en: ContentData = {
           { label: 'Wallet', href: '#product' },
           { label: 'How it works', href: '#how-it-works' },
           { label: 'Security', href: '#security' },
-          { label: 'Open App', href: 'https://wallet.teenet.app' },
+          { label: 'Try Alpha', href: 'https://wallet.teenet.app' },
         ],
       },
       {
